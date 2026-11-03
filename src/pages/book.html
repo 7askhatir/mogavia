@@ -1,0 +1,235 @@
+<section class="page-hero">
+  <div class="page-hero__media">
+    <img src="assets/img/book-hero-960.jpg" srcset="assets/img/book-hero-960.jpg 960w, assets/img/book-hero-1600.jpg 1600w" sizes="100vw" width="960" height="497" alt="A private car waiting on a quiet road in Morocco" fetchpriority="high" decoding="async">
+  </div>
+  <div class="container page-hero__inner">
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumb">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><span data-i18n="nav.book">Book Now</span></li>
+      </ol>
+    </nav>
+    <p class="eyebrow" data-i18n="book.hero.eyebrow">Book now</p>
+    <h1 data-i18n="book.hero.title">Request your private transfer.</h1>
+    <p class="page-hero__sub" data-i18n="book.hero.sub">Choose your route, date and vehicle. We will confirm the final details on WhatsApp or by email.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="booking-trust reveal">
+      <div class="booking-trust__item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+        <div><strong data-i18n="book.trust1t">No online payment</strong><span data-i18n="book.trust1d">You pay your driver directly after confirmation.</span></div>
+      </div>
+      <div class="booking-trust__item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M7 8h10M7 16h10"/></svg>
+        <div><strong data-i18n="book.trust2t">Clear quote</strong><span data-i18n="book.trust2d">The estimate is for the whole vehicle, one way.</span></div>
+      </div>
+      <div class="booking-trust__item">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
+        <div><strong data-i18n="book.trust3t">Human confirmation</strong><span data-i18n="book.trust3d">A real person checks every request before travel.</span></div>
+      </div>
+    </div>
+
+    <div class="booking-layout">
+      <div class="booking-form-wrap reveal">
+        <h2 data-i18n="book.form.title">Your travel details</h2>
+        <p class="small muted" data-i18n="book.form.text">Fields marked * are required. This is a request, not an automatic confirmation.</p>
+
+        <form data-booking-form novalidate>
+          <section class="form-section" aria-labelledby="booking-journey-title">
+            <div class="form-section__head">
+              <span class="form-section__num" aria-hidden="true">01</span>
+              <h3 class="form-section__title" id="booking-journey-title" data-i18n="book.section1.title">The journey</h3>
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="booking-pickup"><span data-i18n="booking.pickup">Pickup point</span> <span class="req" aria-hidden="true">*</span></label>
+                <select id="booking-pickup" name="pickup" required data-booking-from>
+                  <option value="" data-i18n="booking.selectPlaceholder">Select a place</option>
+                </select>
+                <p class="field__hint" data-i18n="booking.pickupHint">Riad, hotel, airport or address</p>
+                <p class="field__error" data-error-for="pickup" hidden></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="booking-destination"><span data-i18n="booking.destination">Destination</span> <span class="req" aria-hidden="true">*</span></label>
+                <select id="booking-destination" name="destination" required data-booking-to>
+                  <option value="" data-i18n="booking.selectPlaceholder">Select a place</option>
+                </select>
+                <p class="field__hint" data-i18n="booking.pickupHint">Riad, hotel, airport or address</p>
+                <p class="field__error" data-error-for="destination" hidden></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="booking-date"><span data-i18n="booking.date">Travel date</span> <span class="req" aria-hidden="true">*</span></label>
+                <input type="date" id="booking-date" name="date" required data-booking-date>
+                <p class="field__hint" data-i18n="booking.dateHint">Today or a future date</p>
+                <p class="field__error" data-error-for="date" hidden></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="booking-time"><span data-i18n="booking.time">Pickup time</span> <span class="req" aria-hidden="true">*</span></label>
+                <input type="time" id="booking-time" name="time" required>
+                <p class="field__hint" data-i18n="booking.timeHint">Early and late pickups can be arranged on request.</p>
+                <p class="field__error" data-error-for="time" hidden></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="booking-passengers"><span data-i18n="booking.passengers">Passengers</span> <span class="req" aria-hidden="true">*</span></label>
+                <input type="number" id="booking-passengers" name="passengers" min="1" max="40" value="2" inputmode="numeric" required>
+                <p class="field__hint" data-i18n="booking.passengersHint">Children count as passengers. Tell us their ages in the notes.</p>
+                <p class="field__error" data-error-for="passengers" hidden></p>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="booking-vehicle-title">
+            <div class="form-section__head">
+              <span class="form-section__num" aria-hidden="true">02</span>
+              <h3 class="form-section__title" id="booking-vehicle-title" data-i18n="book.section2.title">Choose your vehicle</h3>
+            </div>
+            <p class="form-section__hint" data-i18n="book.section2.hint">We suggest a category based on your group size. You can choose another eligible option.</p>
+            <div class="field field--full">
+              <div class="vehicle-grid" data-vehicle-options></div>
+              <p class="field__error" data-error-for="vehicle" hidden></p>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="booking-details-title">
+            <div class="form-section__head">
+              <span class="form-section__num" aria-hidden="true">03</span>
+              <h3 class="form-section__title" id="booking-details-title" data-i18n="book.section3.title">Your details</h3>
+            </div>
+            <div class="form-grid">
+              <div class="field">
+                <label class="field__label" for="booking-fullname"><span data-i18n="booking.fullname">Full name</span> <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="booking-fullname" name="fullname" autocomplete="name" required>
+                <p class="field__error" data-error-for="fullname" hidden></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="booking-email"><span data-i18n="booking.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="booking-email" name="email" autocomplete="email" required>
+                <p class="field__error" data-error-for="email" hidden></p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="booking-phone"><span data-i18n="booking.phone">Phone or WhatsApp</span> <span class="req" aria-hidden="true">*</span></label>
+                <input type="tel" id="booking-phone" name="phone" autocomplete="tel" required>
+                <p class="field__hint" data-i18n="booking.phoneHint">Include your country code.</p>
+                <p class="field__error" data-error-for="phone" hidden></p>
+              </div>
+              <div class="field field--full">
+                <label class="field__label" for="booking-notes" data-i18n="booking.notes">Notes (optional)</label>
+                <textarea id="booking-notes" name="notes" rows="4" data-i18n-placeholder="booking.notesHint" placeholder="Flight number, luggage, child seats, stops or anything else we should know."></textarea>
+                <p class="field__hint" data-i18n="booking.notesHint">Flight number, luggage, child seats, stops or anything else we should know.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="booking-confirm-title">
+            <div class="form-section__head">
+              <span class="form-section__num" aria-hidden="true">04</span>
+              <h3 class="form-section__title" id="booking-confirm-title" data-i18n="book.section4.title">Confirm your request</h3>
+            </div>
+            <div class="field field--full">
+              <label class="check-row" for="booking-consent">
+                <input type="checkbox" id="booking-consent" name="consent" required>
+                <span data-i18n-html="booking.consent">I agree to the <a href="terms.html">booking terms and privacy note</a>.</span>
+              </label>
+              <p class="field__error" data-error-for="consent" hidden></p>
+            </div>
+            <p class="form-note" data-i18n="book.formNote">Your request is saved in this browser and opens in WhatsApp or email. Your booking is confirmed only when we reply with the vehicle and final price.</p>
+            <button class="btn btn--primary btn--block" type="submit" data-i18n="booking.submit">Send booking request</button>
+            <p class="form-status" data-booking-status hidden></p>
+          </section>
+        </form>
+      </div>
+
+      <aside class="booking-aside reveal reveal-delay-1" aria-labelledby="summary-title">
+        <div class="summary-card">
+          <h2 class="summary-card__title" id="summary-title" data-i18n="booking.summary.title">Your request</h2>
+          <p class="summary-empty" data-i18n="booking.summary.empty">Choose your route and travel details to see the estimated fare.</p>
+          <dl class="summary-rows">
+            <div class="summary-row"><dt data-i18n="booking.summary.route">Route</dt><dd data-summary-route>—</dd></div>
+            <div class="summary-row"><dt data-i18n="booking.summary.date">Date</dt><dd data-summary-date>—</dd></div>
+            <div class="summary-row"><dt data-i18n="booking.summary.time">Pickup time</dt><dd data-summary-time>—</dd></div>
+            <div class="summary-row"><dt data-i18n="booking.summary.passengers">Passengers</dt><dd data-summary-pax>—</dd></div>
+            <div class="summary-row"><dt data-i18n="booking.summary.vehicle">Vehicle</dt><dd data-summary-vehicle>—</dd></div>
+          </dl>
+          <hr class="summary-divider">
+          <div class="summary-total">
+            <span class="summary-total__label" data-i18n="booking.summary.total">Estimated total</span>
+            <span class="summary-total__value"><span data-summary-total>—</span><span class="summary-total__unit" data-i18n="booking.summary.unit">whole vehicle · one way</span></span>
+          </div>
+          <p class="summary-note" data-i18n="booking.summary.note">Indicative price. The final quote is confirmed before travel. No payment is taken on this website.</p>
+          <div class="summary-actions">
+            <a class="btn btn--primary" href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener" data-wa data-wa-message="wa.general" data-i18n="common.whatsapp">Chat on WhatsApp</a>
+            <a class="btn btn--secondary" href="tel:{{PHONE}}" data-phone-link data-i18n="common.callUs">Call us</a>
+          </div>
+          <ul class="summary-trust">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="book.trust1t">No online payment</span></li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="book.trust3t">Human confirmation</span></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sky">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <p class="eyebrow eyebrow--center" data-i18n="faq.title">Questions before you book</p>
+      <h2 data-i18n="book.faq.title">Booking questions</h2>
+    </div>
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary data-i18n="faq.confirm.q">How do I confirm a booking?</summary>
+        <div class="faq-item__body"><p data-i18n="faq.confirm.a">Send your request through the booking form, then confirm the details with us on WhatsApp. Your journey is confirmed when we reply with the vehicle, meeting point and final price.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.payment.q">Is a deposit or online payment required?</summary>
+        <div class="faq-item__body"><p data-i18n="faq.payment.a">No online payment is taken by this website. Payment is arranged directly with your driver; confirm the accepted method when you book.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.flight.q">What happens if my flight is delayed?</summary>
+        <div class="faq-item__body"><p data-i18n="faq.flight.a">Share your flight number when booking. We monitor arrival times and adjust the pickup for delays.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary data-i18n="faq.child.q">Can I request a child seat?</summary>
+        <div class="faq-item__body"><p data-i18n="faq.child.a">Tell us the ages of any children travelling and we will confirm the best available option before your journey.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-panel reveal">
+      <div>
+        <h2 data-i18n="book.cta.title">Prefer to arrange it by message?</h2>
+        <p data-i18n="book.cta.text">Send your route and date on WhatsApp and we will reply with the same clear quote.</p>
+      </div>
+      <div class="cta-panel__actions">
+        <a class="btn btn--primary" href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener" data-wa data-wa-message="wa.general" data-i18n="common.whatsapp">Chat on WhatsApp</a>
+        <a class="btn btn--secondary" href="contact.html" data-i18n="common.contactUs">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-dialog-title">
+  <div class="dialog__panel">
+    <button class="dialog__close" type="button" data-dialog-close data-i18n-aria="booking.dialog.close" aria-label="Close">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <span class="dialog__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span>
+    <h2 id="booking-dialog-title" data-i18n="booking.dialog.title">Request ready</h2>
+    <p data-i18n="booking.dialog.text">Your details are prepared. Send them on WhatsApp or by email so we can confirm your journey.</p>
+    <p class="dialog__ref" data-dialog-ref></p>
+    <dl class="dialog__summary" data-dialog-summary></dl>
+    <p class="dialog__note" data-i18n="booking.dialog.note">This is not a confirmed booking until we reply. No payment has been taken.</p>
+    <div class="dialog__actions">
+      <a class="btn btn--primary" href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener" data-dialog-wa data-i18n="booking.dialog.whatsapp">Send on WhatsApp</a>
+      <a class="btn btn--secondary" href="mailto:{{EMAIL}}" data-dialog-email data-i18n="booking.dialog.email">Send by email</a>
+      <button class="btn btn--secondary" type="button" data-dialog-close data-i18n="booking.dialog.close">Close</button>
+    </div>
+  </div>
+</dialog>

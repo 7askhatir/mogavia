@@ -1,0 +1,278 @@
+{
+  "about-essaouira-480.jpg": {
+    "h": 853,
+    "w": 480
+  },
+  "about-essaouira-960.jpg": {
+    "h": 1706,
+    "w": 960
+  },
+  "about-hero-1600.jpg": {
+    "h": 898,
+    "w": 1600
+  },
+  "about-hero-960.jpg": {
+    "h": 539,
+    "w": 960
+  },
+  "blog-hero-1600.jpg": {
+    "h": 1067,
+    "w": 1600
+  },
+  "blog-hero-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
+  "blog-road-480.jpg": {
+    "h": 360,
+    "w": 480
+  },
+  "blog-road-960.jpg": {
+    "h": 720,
+    "w": 960
+  },
+  "blog-season-480.jpg": {
+    "h": 720,
+    "w": 480
+  },
+  "blog-season-960.jpg": {
+    "h": 1440,
+    "w": 960
+  },
+  "blog-surf-480.jpg": {
+    "h": 722,
+    "w": 480
+  },
+  "blog-surf-960.jpg": {
+    "h": 1444,
+    "w": 960
+  },
+  "book-hero-1600.jpg": {
+    "h": 828,
+    "w": 1600
+  },
+  "book-hero-960.jpg": {
+    "h": 497,
+    "w": 960
+  },
+  "contact-hero-1600.jpg": {
+    "h": 2400,
+    "w": 1600
+  },
+  "contact-hero-960.jpg": {
+    "h": 1440,
+    "w": 960
+  },
+  "cta-coast-1600.jpg": {
+    "h": 2400,
+    "w": 1600
+  },
+  "cta-coast-960.jpg": {
+    "h": 1440,
+    "w": 960
+  },
+  "dest-agadir-480.jpg": {
+    "h": 640,
+    "w": 480
+  },
+  "dest-agadir-960.jpg": {
+    "h": 1280,
+    "w": 960
+  },
+  "dest-agafay-480.jpg": {
+    "h": 621,
+    "w": 480
+  },
+  "dest-agafay-960.jpg": {
+    "h": 1242,
+    "w": 960
+  },
+  "dest-casablanca-480.jpg": {
+    "h": 320,
+    "w": 480
+  },
+  "dest-casablanca-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
+  "dest-essaouira-480.jpg": {
+    "h": 720,
+    "w": 480
+  },
+  "dest-essaouira-960.jpg": {
+    "h": 1440,
+    "w": 960
+  },
+  "dest-imsouane-480.jpg": {
+    "h": 360,
+    "w": 480
+  },
+  "dest-imsouane-960.jpg": {
+    "h": 720,
+    "w": 960
+  },
+  "dest-marrakech-480.jpg": {
+    "h": 719,
+    "w": 480
+  },
+  "dest-marrakech-960.jpg": {
+    "h": 1438,
+    "w": 960
+  },
+  "dest-ouarzazate-480.jpg": {
+    "h": 720,
+    "w": 480
+  },
+  "dest-ouarzazate-960.jpg": {
+    "h": 1440,
+    "w": 960
+  },
+  "dest-taghazout-480.jpg": {
+    "h": 384,
+    "w": 480
+  },
+  "dest-taghazout-960.jpg": {
+    "h": 768,
+    "w": 960
+  },
+  "destinations-hero-1600.jpg": {
+    "h": 1068,
+    "w": 1600
+  },
+  "destinations-hero-960.jpg": {
+    "h": 641,
+    "w": 960
+  },
+  "excursions-hero-1600.jpg": {
+    "h": 1280,
+    "w": 1600
+  },
+  "excursions-hero-960.jpg": {
+    "h": 768,
+    "w": 960
+  },
+  "fleet-hero-1600.jpg": {
+    "h": 1067,
+    "w": 1600
+  },
+  "fleet-hero-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
+  "fleet-minibus-480.jpg": {
+    "h": 446,
+    "w": 480
+  },
+  "fleet-minibus-960.jpg": {
+    "h": 892,
+    "w": 960
+  },
+  "fleet-minivan-480.jpg": {
+    "h": 320,
+    "w": 480
+  },
+  "fleet-minivan-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
+  "fleet-sedan-480.jpg": {
+    "h": 320,
+    "w": 480
+  },
+  "fleet-sedan-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
+  "fleet-van-480.jpg": {
+    "h": 672,
+    "w": 480
+  },
+  "fleet-van-960.jpg": {
+    "h": 1344,
+    "w": 960
+  },
+  "hero-essaouira-1600.jpg": {
+    "h": 2133,
+    "w": 1600
+  },
+  "hero-essaouira-480.jpg": {
+    "h": 640,
+    "w": 480
+  },
+  "hero-essaouira-960.jpg": {
+    "h": 1280,
+    "w": 960
+  },
+  "hero-vito-480.jpg": {
+    "h": 320,
+    "w": 480
+  },
+  "hero-vito-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
+  "services-hero-1600.jpg": {
+    "h": 1200,
+    "w": 1600
+  },
+  "services-hero-960.jpg": {
+    "h": 720,
+    "w": 960
+  },
+  "tour-agafay-480.jpg": {
+    "h": 384,
+    "w": 480
+  },
+  "tour-agafay-960.jpg": {
+    "h": 768,
+    "w": 960
+  },
+  "tour-aitbenhaddou-480.jpg": {
+    "h": 640,
+    "w": 480
+  },
+  "tour-aitbenhaddou-960.jpg": {
+    "h": 1280,
+    "w": 960
+  },
+  "tour-atlas-480.jpg": {
+    "h": 360,
+    "w": 480
+  },
+  "tour-atlas-960.jpg": {
+    "h": 720,
+    "w": 960
+  },
+  "tour-marrakech-480.jpg": {
+    "h": 320,
+    "w": 480
+  },
+  "tour-marrakech-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
+  "tour-medina-480.jpg": {
+    "h": 853,
+    "w": 480
+  },
+  "tour-medina-960.jpg": {
+    "h": 1706,
+    "w": 960
+  },
+  "tour-paradise-480.jpg": {
+    "h": 357,
+    "w": 480
+  },
+  "tour-paradise-960.jpg": {
+    "h": 714,
+    "w": 960
+  },
+  "why-chauffeur-480.jpg": {
+    "h": 287,
+    "w": 480
+  },
+  "why-chauffeur-960.jpg": {
+    "h": 575,
+    "w": 960
+  }
+}

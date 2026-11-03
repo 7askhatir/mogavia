@@ -1,0 +1,127 @@
+<section class="page-hero">
+  <div class="page-hero__media">
+    <img src="assets/img/contact-hero-960.jpg" srcset="assets/img/contact-hero-960.jpg 960w, assets/img/contact-hero-1600.jpg 1600w" sizes="100vw" width="960" height="1440" alt="The Atlantic coast near Essaouira, Morocco" fetchpriority="high" decoding="async">
+  </div>
+  <div class="container page-hero__inner">
+    <nav aria-label="Breadcrumb">
+      <ol class="breadcrumb">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><span data-i18n="nav.contact">Contact</span></li>
+      </ol>
+    </nav>
+    <p class="eyebrow" data-i18n="contact.hero.eyebrow">Contact</p>
+    <h1 data-i18n="contact.hero.title">Let's plan the drive.</h1>
+    <p class="page-hero__sub" data-i18n="contact.hero.sub">Tell us where you are going and when. We will reply with a clear quote and the next step.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="contact-layout">
+      <aside class="contact-info reveal">
+        <h2 data-i18n="contact.info.title">Reach us directly</h2>
+        <p data-i18n="contact.info.text">WhatsApp is usually the quickest way to reach us during the day. For longer itineraries, email works well.</p>
+        <ul class="contact-info__list">
+          <li class="contact-info__item">
+            <span class="contact-info__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <span><span class="contact-info__label" data-i18n="contact.info.phone">Phone</span><span class="contact-info__value"><a href="tel:{{PHONE}}" data-phone-link>{{PHONE_DISPLAY}}</a></span></span>
+          </li>
+          <li class="contact-info__item">
+            <span class="contact-info__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></span>
+            <span><span class="contact-info__label" data-i18n="contact.info.whatsapp">WhatsApp</span><span class="contact-info__value"><a href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener" data-wa data-wa-message="wa.general" data-i18n="common.whatsapp">Chat on WhatsApp</a></span></span>
+          </li>
+          <li class="contact-info__item">
+            <span class="contact-info__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg></span>
+            <span><span class="contact-info__label" data-i18n="contact.info.email">Email</span><span class="contact-info__value"><a href="mailto:{{EMAIL}}" data-email-link>{{EMAIL}}</a></span></span>
+          </li>
+          <li class="contact-info__item">
+            <span class="contact-info__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <span><span class="contact-info__label" data-i18n="contact.info.location">Base</span><span class="contact-info__value" data-i18n="footer.location">Essaouira, Morocco</span></span>
+          </li>
+          <li class="contact-info__item">
+            <span class="contact-info__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <span><span class="contact-info__label" data-i18n="contact.info.hours">Hours</span><span class="contact-info__value" data-i18n="footer.hours">Daily, 07:00–22:00</span></span>
+          </li>
+        </ul>
+      </aside>
+
+      <div class="contact-form-wrap reveal reveal-delay-1">
+        <h2 data-i18n="contact.form.title">Send a message</h2>
+        <p data-i18n="contact.form.text">This form opens your email app with the message ready to send. No data is stored on this website.</p>
+
+        <form data-contact-form novalidate>
+          <div class="form-grid">
+            <div class="field">
+              <label class="field__label" for="contact-name" data-i18n="contact.form.name">Your name</label>
+              <input type="text" id="contact-name" name="name" autocomplete="name" required data-i18n-placeholder="contact.form.namePh" placeholder="First and last name">
+              <p class="field__error" data-error-for="name" hidden></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="contact-email" data-i18n="contact.form.email">Email</label>
+              <input type="email" id="contact-email" name="email" autocomplete="email" required data-i18n-placeholder="contact.form.emailPh" placeholder="you@example.com">
+              <p class="field__error" data-error-for="email" hidden></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="contact-phone" data-i18n="contact.form.phone">Phone or WhatsApp (optional)</label>
+              <input type="tel" id="contact-phone" name="phone" autocomplete="tel" data-i18n-placeholder="contact.form.phonePh" placeholder="+212 ...">
+            </div>
+            <div class="field">
+              <label class="field__label" for="contact-subject" data-i18n="contact.form.subject">Subject (optional)</label>
+              <input type="text" id="contact-subject" name="subject" data-i18n-placeholder="contact.form.subjectPh" placeholder="Transfer, excursion or question">
+            </div>
+            <div class="field field--full">
+              <label class="field__label" for="contact-message" data-i18n="contact.form.message">Your message</label>
+              <textarea id="contact-message" name="message" rows="6" required data-i18n-placeholder="contact.form.messagePh" placeholder="Dates, route, number of passengers and anything we should know..."></textarea>
+              <p class="field__error" data-error-for="message" hidden></p>
+            </div>
+            <div class="field field--full">
+              <label class="check-row" for="contact-consent">
+                <input type="checkbox" id="contact-consent" name="consent" required>
+                <span data-i18n-html="contact.form.consent">I agree that my message may be used to reply to my enquiry. See the <a href="terms.html">privacy note</a>.</span>
+              </label>
+              <p class="field__error" data-error-for="consent" hidden></p>
+            </div>
+          </div>
+          <button class="btn btn--primary" type="submit" data-i18n="contact.form.submit">Open email draft</button>
+          <p class="form-note" data-i18n="contact.form.note">Prefer WhatsApp? Use the green button in the corner or the contact details beside this form.</p>
+          <p class="form-status" data-contact-status hidden></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--sand section--tight">
+  <div class="container">
+    <div class="split">
+      <div class="split__body reveal">
+        <h2 data-i18n="contact.before.title">Before you write</h2>
+        <ul class="checklist">
+          <li data-i18n="contact.before.item1">Include your dates, route and group size.</li>
+          <li data-i18n="contact.before.item2">Arriving by air? Add your flight number and arrival time.</li>
+          <li data-i18n="contact.before.item3">We reply in English, French, Arabic and Spanish.</li>
+        </ul>
+      </div>
+      <div class="split__media reveal reveal-delay-1">
+        <div class="map-wrap">
+          <iframe title="Map showing Essaouira, Morocco" data-i18n-title="contact.map.title" src="https://www.google.com/maps?q=Essaouira,+Morocco&amp;output=embed" width="600" height="390" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <div class="cta-panel reveal">
+      <div>
+        <h2 data-i18n="contact.cta.title">Travelling today or tomorrow?</h2>
+        <p data-i18n="contact.cta.text">For short-notice requests, WhatsApp is faster than email. Send your pickup time and route.</p>
+      </div>
+      <div class="cta-panel__actions">
+        <a class="btn btn--primary" href="https://wa.me/{{WHATSAPP}}" target="_blank" rel="noopener" data-wa data-wa-message="wa.general" data-i18n="common.whatsapp">Chat on WhatsApp</a>
+        <a class="btn btn--secondary" href="book.html" data-i18n="nav.book">Book Now</a>
+      </div>
+    </div>
+  </div>
+</section>
