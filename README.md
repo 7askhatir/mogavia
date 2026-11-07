@@ -149,5 +149,5 @@ long-lived caching for `assets/`.
 
 Site code and copy were created for this project. Photography remains subject to
 the Pexels licence. Fonts are served by Google Fonts under their respective
-licences (Cormorant Garamond, Inter, Amiri, Tajawal). The embedded map is
+licences (Inter, Manrope, Tajawal). The embedded map is
 provided by Google Maps and subject to Google's terms.

@@ -40,6 +40,7 @@ window.TTE_STRINGS.en = {
   "nav.blog": "Blog",
   "nav.contact": "Contact",
   "nav.book": "Book Now",
+  "nav.bookShort": "Book Now",
 
   "footer.about": "Private taxi transfers and tailor-made excursions from Essaouira to Marrakech, Agadir, Casablanca and the Atlas Mountains.",
   "footer.note": "Indicative prices are confirmed with you before travel.",
@@ -87,7 +88,7 @@ window.TTE_STRINGS.en = {
   "common.indicative": "Indicative price, confirmed before travel.",
 
   "home.hero.eyebrow": "Private travel · Essaouira, Morocco",
-  "home.hero.title": "Private Taxi Transfers &amp; Excursions in <em>Morocco</em>",
+  "home.hero.title": "Private Taxi Transfers<br>&amp; Excursions in <em>Morocco</em>",
   "home.hero.sub": "Travel in comfort and discover Morocco with a professional driver. Private vehicles, clear prices and door-to-door service from Essaouira.",
   "home.hero.book": "Book your taxi",
   "home.hero.explore": "Explore our excursions",
@@ -594,7 +595,6 @@ window.TTE_STRINGS.en = {
   "terms.hero.eyebrow": "Booking terms",
   "terms.hero.title": "Terms, prices and privacy.",
   "terms.hero.sub": "The practical details behind a booking request.",
-  "terms.updated": "Last updated: November 2026",
   "terms.intro": "These notes explain how requests, quotes and personal data are handled. They apply to bookings made through this website. If anything is unclear, ask us before you travel.",
   "terms.s1.title": "1. Booking requests",
   "terms.s1.p1": "Sending the form creates a request, not a confirmed booking. We check availability and reply with the vehicle, meeting point and final price. Your journey is confirmed only when we accept it in writing on WhatsApp or by email.",

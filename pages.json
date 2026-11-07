@@ -16,8 +16,8 @@
       "ogWidth": 960,
       "ogHeight": 640,
       "preload": "hero-essaouira",
-      "preloadSrcset": "assets/img/hero-essaouira-480.jpg 480w, assets/img/hero-essaouira-960.jpg 960w",
-      "preloadSizes": "(max-width: 900px) 92vw, 44vw",
+      "preloadSrcset": "assets/img/hero-essaouira-960.jpg 960w, assets/img/hero-essaouira-1600.jpg 1600w",
+      "preloadSizes": "100vw",
       "bodyClass": "page-home",
       "sitemap": { "priority": "1.0", "changefreq": "monthly" }
     },

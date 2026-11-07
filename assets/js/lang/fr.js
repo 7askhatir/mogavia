@@ -40,6 +40,7 @@ window.TTE_STRINGS.fr = {
   "nav.blog": "Blog",
   "nav.contact": "Contact",
   "nav.book": "Réserver",
+  "nav.bookShort": "Réserver",
 
   "footer.about": "Transferts en taxi privé et excursions sur mesure depuis Essaouira vers Marrakech, Agadir, Casablanca et les montagnes de l’Atlas.",
   "footer.note": "Les prix indicatifs sont confirmés avec vous avant le voyage.",
@@ -87,7 +88,7 @@ window.TTE_STRINGS.fr = {
   "common.indicative": "Prix indicatif, confirmé avant le voyage.",
 
   "home.hero.eyebrow": "Voyage privé · Essaouira, Maroc",
-  "home.hero.title": "Transferts en taxi privé &amp; excursions au <em>Maroc</em>",
+  "home.hero.title": "Transferts en taxi privé<br>&amp; excursions au <em>Maroc</em>",
   "home.hero.sub": "Voyagez confortablement et découvrez le Maroc avec un chauffeur professionnel. Véhicules privés, prix clairs et service de porte à porte depuis Essaouira.",
   "home.hero.book": "Réserver votre taxi",
   "home.hero.explore": "Découvrir nos excursions",
@@ -594,7 +595,6 @@ window.TTE_STRINGS.fr = {
   "terms.hero.eyebrow": "Conditions de réservation",
   "terms.hero.title": "Conditions, prix et confidentialité.",
   "terms.hero.sub": "Les détails pratiques qui accompagnent une demande de réservation.",
-  "terms.updated": "Dernière mise à jour : novembre 2026",
   "terms.intro": "Ces notes expliquent comment les demandes, les devis et les données personnelles sont traités. Elles s’appliquent aux réservations effectuées via ce site. Si quelque chose n’est pas clair, demandez-nous avant de voyager.",
   "terms.s1.title": "1. Demandes de réservation",
   "terms.s1.p1": "L’envoi du formulaire crée une demande, et non une réservation confirmée. Nous vérifions les disponibilités et vous répondons avec le véhicule, le point de rendez-vous et le prix final. Votre voyage n’est confirmé que lorsque nous l’acceptons par écrit sur WhatsApp ou par e-mail.",

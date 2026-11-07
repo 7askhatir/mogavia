@@ -137,7 +137,7 @@
     });
 
     window.addEventListener("resize", function () {
-      if (window.innerWidth > 1060 && isOpen) closeMenu(false);
+      if (window.innerWidth > 1260 && isOpen) closeMenu(false);
     });
 
     panel.querySelectorAll("a[href]").forEach(function (link) {
