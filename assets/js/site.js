@@ -444,6 +444,192 @@
     track.addEventListener("pointercancel", endDrag);
   }
 
+  /* ------------------------------------------------------------------ */
+  /* Vehicle details popup                                               */
+  /* ------------------------------------------------------------------ */
+  var VEHICLE_DETAILS = {
+    superb: {
+      title: "EXECUTIVE / FIRST CLASS",
+      type: "BERLINE",
+      image: "assets/img/1.png",
+      passengers: "1–3 passengers",
+      luggage: "2 large suitcases",
+      models: "Skoda Superb",
+      description: "A quiet, comfortable sedan for couples and small families on airport pickups and city-to-city transfers.",
+      features: ["Air conditioning", "Phone charging", "Bottled water"]
+    },
+    vito: {
+      title: "EXECUTIVE / VIP",
+      type: "VIP",
+      image: "assets/img/2.png",
+      passengers: "1–8 passengers",
+      luggage: "6 suitcases",
+      models: "Mercedes Vito, Renault Trafic or Fiat Scudo",
+      description: "A premium minivan with sliding doors and flexible seating for families, business travellers and small groups.",
+      features: ["Air conditioning", "Sliding doors", "Child seat on request"]
+    },
+    sprinter: {
+      title: "EXECUTIVE / MINIBUS",
+      type: "MINIBUS",
+      image: "assets/img/3.webp",
+      passengers: "8–14 passengers",
+      luggage: "12 suitcases",
+      models: "Mercedes Sprinter",
+      description: "A spacious minibus for larger families and small groups, with a generous luggage bay for long journeys.",
+      features: ["Air conditioning", "High roof", "Long-distance comfort"]
+    },
+    kodiaq: {
+      title: "EXECUTIVE / FIRST CLASS SUV",
+      type: "SUV",
+      image: "assets/img/4.png",
+      passengers: "1–4 passengers",
+      luggage: "6 suitcases",
+      models: "Skoda Kodiaq or Hyundai",
+      description: "A capable 4x4 for mountain roads, coastal escapes and family transfers, with room for everyone and their luggage.",
+      features: ["Air conditioning", "Phone charging", "Bottled water"]
+    }
+  };
+
+  function initVehiclePopup() {
+    var popup = document.getElementById("vehiclePopup");
+    if (!popup) return;
+
+    var overlay = popup.querySelector(".vehicle-popup__overlay");
+    var panel = popup.querySelector(".vehicle-popup__panel");
+    var closeButton = popup.querySelector(".vehicle-popup__close");
+    var titleEl = popup.querySelector("[data-vehicle-popup-title]");
+    var typeEl = popup.querySelector("[data-vehicle-popup-type]");
+    var imageEl = popup.querySelector("[data-vehicle-popup-image]");
+    var passengersEl = popup.querySelector("[data-vehicle-popup-passengers]");
+    var luggageEl = popup.querySelector("[data-vehicle-popup-luggage]");
+    var modelsEl = popup.querySelector("[data-vehicle-popup-models]");
+    var descriptionEl = popup.querySelector("[data-vehicle-popup-description]");
+    var featuresEl = popup.querySelector("[data-vehicle-popup-features]");
+    var lastFocused = null;
+    var isOpen = false;
+
+    function populate(key) {
+      var data = VEHICLE_DETAILS[key];
+      if (!data) return false;
+      titleEl.textContent = data.title;
+      typeEl.textContent = data.type;
+      imageEl.src = data.image;
+      imageEl.alt = data.models;
+      passengersEl.textContent = data.passengers;
+      luggageEl.textContent = data.luggage;
+      modelsEl.textContent = data.models;
+      descriptionEl.textContent = data.description;
+      featuresEl.innerHTML = "";
+      for (var i = 0; i < data.features.length; i++) {
+        var item = document.createElement("li");
+        item.textContent = data.features[i];
+        featuresEl.appendChild(item);
+      }
+      return true;
+    }
+
+    function open(key) {
+      if (isOpen || !populate(key)) return;
+      isOpen = true;
+      lastFocused = document.activeElement;
+      popup.classList.add("is-open");
+      popup.setAttribute("aria-hidden", "false");
+      document.body.classList.add("vehicle-popup-open");
+      closeButton.focus();
+    }
+
+    function close() {
+      if (!isOpen) return;
+      isOpen = false;
+      popup.classList.remove("is-open");
+      popup.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("vehicle-popup-open");
+      if (lastFocused && typeof lastFocused.focus === "function") {
+        lastFocused.focus();
+      }
+    }
+
+    var track = document.querySelector("[data-vehicles-track]");
+    var clickedCard = null;
+    var pointerId = null;
+    var startX = 0;
+    var startY = 0;
+    var moved = false;
+
+    if (track) {
+      track.addEventListener("pointerdown", function (event) {
+        clickedCard = event.target.closest(".vehicles__card");
+        pointerId = event.pointerId;
+        startX = event.clientX;
+        startY = event.clientY;
+        moved = false;
+      });
+
+      track.addEventListener("pointermove", function (event) {
+        if (event.pointerId !== pointerId) return;
+        if (Math.abs(event.clientX - startX) > 6 || Math.abs(event.clientY - startY) > 6) {
+          moved = true;
+        }
+      });
+
+      track.addEventListener("pointerup", function (event) {
+        if (event.pointerId !== pointerId) return;
+        if (clickedCard && !moved) {
+          open(clickedCard.getAttribute("data-vehicle"));
+        }
+        clickedCard = null;
+        pointerId = null;
+        moved = false;
+      });
+
+      track.addEventListener("pointercancel", function () {
+        clickedCard = null;
+        pointerId = null;
+        moved = false;
+      });
+    }
+
+    document.querySelectorAll(".vehicles__card").forEach(function (card) {
+      card.addEventListener("keydown", function (event) {
+        if (event.key === "Enter" || event.key === " " || event.key === "Spacebar") {
+          event.preventDefault();
+          open(card.getAttribute("data-vehicle"));
+        }
+      });
+    });
+
+    overlay.addEventListener("click", close);
+    closeButton.addEventListener("click", close);
+
+    document.addEventListener("keydown", function (event) {
+      if (!isOpen) return;
+
+      if (event.key === "Escape") {
+        event.preventDefault();
+        close();
+        return;
+      }
+
+      if (event.key === "Tab") {
+        var focusables = panel.querySelectorAll("button, [href], input, select, textarea, [tabindex]:not([tabindex=\"-1\"])");
+        var visible = [];
+        for (var i = 0; i < focusables.length; i++) {
+          if (focusables[i].offsetParent !== null) visible.push(focusables[i]);
+        }
+        if (!visible.length) return;
+        var first = visible[0];
+        var last = visible[visible.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+          event.preventDefault();
+          last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+          event.preventDefault();
+          first.focus();
+        }
+      }
+    });
+  }
+
   function init() {
     syncContactDetails();
     initHeader();
@@ -453,6 +639,7 @@
     initContactForm();
     initYear();
     initVehiclesCarousel();
+    initVehiclePopup();
   }
 
   document.addEventListener("DOMContentLoaded", init);

@@ -428,7 +428,7 @@
 
     <div class="vehicles__wrapper">
       <div class="vehicles__track" data-vehicles-track tabindex="0" role="region" aria-roledescription="carousel" data-i18n-aria="home.fleetSlider.region" aria-label="Vehicle carousel">
-        <article class="vehicles__card reveal">
+        <article class="vehicles__card reveal" data-vehicle="superb" tabindex="0" role="button" aria-label="View Skoda Superb details">
           <div class="vehicles__media">
             <span class="vehicles__badge" data-i18n="fleetCard.superb.badge">SUV</span>
             <img class="vehicles__img" draggable="false" src="assets/img/1.png" width="640" height="427" alt="Skoda Superb executive sedan for private transfers" loading="lazy" decoding="async">
@@ -445,7 +445,7 @@
           </div>
         </article>
 
-        <article class="vehicles__card reveal reveal-delay-1">
+        <article class="vehicles__card reveal reveal-delay-1" data-vehicle="vito" tabindex="0" role="button" aria-label="View Mercedes Vito, Renault Trafic or Fiat Scudo details">
           <div class="vehicles__media">
             <span class="vehicles__badge" data-i18n="fleetCard.vito.badge">VIP</span>
             <img class="vehicles__img" draggable="false" src="assets/img/2.png" width="640" height="427" alt="Mercedes Vito executive VIP minivan" loading="lazy" decoding="async">
@@ -462,7 +462,7 @@
           </div>
         </article>
 
-        <article class="vehicles__card reveal reveal-delay-2">
+        <article class="vehicles__card reveal reveal-delay-2" data-vehicle="sprinter" tabindex="0" role="button" aria-label="View Mercedes Sprinter details">
           <div class="vehicles__media">
             <span class="vehicles__badge" data-i18n="fleetCard.sprinter.badge">MINIBUS</span>
             <img class="vehicles__img" draggable="false" src="assets/img/3.webp" width="640" height="427" alt="Mercedes Sprinter executive minibus for groups" loading="lazy" decoding="async">
@@ -479,7 +479,7 @@
           </div>
         </article>
 
-        <article class="vehicles__card reveal reveal-delay-3">
+        <article class="vehicles__card reveal reveal-delay-3" data-vehicle="kodiaq" tabindex="0" role="button" aria-label="View Skoda Kodiaq or Hyundai details">
           <div class="vehicles__media">
             <span class="vehicles__badge" data-i18n="fleetCard.kodiaq.badge">SUV / 4x4</span>
             <img class="vehicles__img" draggable="false" src="assets/img/4.png" width="640" height="427" alt="Skoda Kodiaq or Hyundai executive SUV for Morocco transfers" loading="lazy" decoding="async">
@@ -501,6 +501,54 @@
     <p class="vehicles__note" data-i18n="home.fleetSlider.note">Models shown are representative. The exact vehicle and capacity are confirmed when you book.</p>
   </div>
 </section>
+
+<div class="vehicle-popup" id="vehiclePopup" aria-hidden="true">
+  <div class="vehicle-popup__overlay" data-vehicle-popup-close aria-hidden="true"></div>
+  <aside class="vehicle-popup__panel" role="dialog" aria-modal="true" aria-labelledby="vehiclePopupTitle">
+    <button class="vehicle-popup__close" type="button" data-vehicle-popup-close aria-label="Close vehicle details">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="vehicle-popup__scroll">
+      <div class="vehicle-popup__head">
+        <span class="vehicle-popup__badge">VEHICLE CLASS</span>
+        <h2 class="vehicle-popup__title" id="vehiclePopupTitle" data-vehicle-popup-title>EXECUTIVE</h2>
+        <p class="vehicle-popup__type" data-vehicle-popup-type>BERLINE</p>
+      </div>
+
+      <div class="vehicle-popup__media">
+        <img class="vehicle-popup__img" data-vehicle-popup-image src="" alt="">
+      </div>
+
+      <div class="vehicle-popup__info">
+        <div class="vehicle-popup__specs">
+          <div class="vehicle-popup__spec">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+            <span data-vehicle-popup-passengers></span>
+          </div>
+          <div class="vehicle-popup__spec">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+            <span data-vehicle-popup-luggage></span>
+          </div>
+        </div>
+
+        <div class="vehicle-popup__block">
+          <h3 class="vehicle-popup__label">Typical models</h3>
+          <p data-vehicle-popup-models></p>
+        </div>
+
+        <div class="vehicle-popup__block">
+          <h3 class="vehicle-popup__label">Description</h3>
+          <p data-vehicle-popup-description></p>
+        </div>
+
+        <div class="vehicle-popup__block">
+          <h3 class="vehicle-popup__label">Other specifications</h3>
+          <ul class="vehicle-popup__features" data-vehicle-popup-features></ul>
+        </div>
+      </div>
+    </div>
+  </aside>
+</div>
 
 <section class="intro">
   <div class="container intro__grid">
