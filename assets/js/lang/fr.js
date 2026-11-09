@@ -629,5 +629,43 @@ window.TTE_STRINGS.fr = {
   "notfound.title": "Cette route ne mène nulle part.",
   "notfound.text": "La page que vous cherchiez a été déplacée ou n’a jamais existé. Laissez-nous vous remettre sur la bonne route.",
   "notfound.home": "Retour à l’accueil",
-  "notfound.book": "Réserver un transfert"
+  "notfound.book": "Réserver un transfert",
+
+  "home.fleetSlider.eyebrow": "Notre flotte",
+  "home.fleetSlider.title": "Choisissez le véhicule idéal pour votre voyage",
+  "home.fleetSlider.sub": "Découvrez notre flotte de véhicules privés confortables pour vos transferts et excursions à travers le Maroc.",
+  "home.fleetSlider.prev": "Véhicules précédents",
+  "home.fleetSlider.next": "Véhicules suivants",
+  "home.fleetSlider.region": "Carrousel des véhicules",
+  "home.fleetSlider.note": "Les modèles présentés sont indicatifs. Le véhicule exact et sa capacité sont confirmés lors de la réservation.",
+
+  "fleetCard.kodiaq.category": "SUV 4x4",
+  "fleetCard.kodiaq.name": "Skoda Kodiaq 4x4",
+  "fleetCard.kodiaq.desc": "Un 4x4 capable d’affronter les routes de montagne, les escapades côtières et les transferts en famille, avec de la place pour tous et leurs bagages.",
+  "fleetCard.kodiaq.seats": "5–7 passagers",
+  "fleetCard.kodiaq.bags": "6 valises",
+
+  "fleetCard.superb.category": "Berline confort",
+  "fleetCard.superb.name": "Skoda Superb",
+  "fleetCard.superb.desc": "Une berline silencieuse et confortable pour les couples et les petites familles lors des transferts aéroport et entre villes.",
+  "fleetCard.superb.seats": "1–4 passagers",
+  "fleetCard.superb.bags": "2 grandes valises",
+
+  "fleetCard.h1.category": "Van de tourisme",
+  "fleetCard.h1.name": "Hyundai H1",
+  "fleetCard.h1.desc": "Un van spacieux pour les grandes familles et les petits groupes, avec un généreux coffre pour les longs trajets.",
+  "fleetCard.h1.seats": "8–14 passagers",
+  "fleetCard.h1.bags": "12 valises",
+
+  "fleetCard.vito.category": "Minivan premium",
+  "fleetCard.vito.name": "Mercedes Vito",
+  "fleetCard.vito.desc": "Un minivan premium avec portes coulissantes et sièges modulables pour les familles, les voyageurs d’affaires et les petits groupes.",
+  "fleetCard.vito.seats": "5–7 passagers",
+  "fleetCard.vito.bags": "6 valises",
+
+  "fleetCard.coach.category": "Mini-bus",
+  "fleetCard.coach.name": "Mini-bus",
+  "fleetCard.coach.desc": "Un mini-bus pour les transferts de groupe, les mariages et les circuits organisés, devis établi avec le chauffeur et l’itinéraire à l’avance.",
+  "fleetCard.coach.seats": "15–40 passagers",
+  "fleetCard.coach.bags": "20 valises"
 };

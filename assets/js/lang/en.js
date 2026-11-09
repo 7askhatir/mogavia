@@ -629,5 +629,43 @@ window.TTE_STRINGS.en = {
   "notfound.title": "This road goes nowhere.",
   "notfound.text": "The page you were looking for has moved or never existed. Let us get you back on route.",
   "notfound.home": "Back to home",
-  "notfound.book": "Book a transfer"
+  "notfound.book": "Book a transfer",
+
+  "home.fleetSlider.eyebrow": "Our fleet",
+  "home.fleetSlider.title": "Choose the Perfect Vehicle for Your Journey",
+  "home.fleetSlider.sub": "Discover our fleet of comfortable private vehicles for transfers and excursions across Morocco.",
+  "home.fleetSlider.prev": "Previous vehicles",
+  "home.fleetSlider.next": "Next vehicles",
+  "home.fleetSlider.region": "Vehicle carousel",
+  "home.fleetSlider.note": "Models shown are representative. The exact vehicle and capacity are confirmed when you book.",
+
+  "fleetCard.kodiaq.category": "4x4 SUV",
+  "fleetCard.kodiaq.name": "Skoda Kodiaq 4x4",
+  "fleetCard.kodiaq.desc": "A capable 4x4 for mountain roads, coastal escapes and family transfers, with room for everyone and their luggage.",
+  "fleetCard.kodiaq.seats": "5–7 passengers",
+  "fleetCard.kodiaq.bags": "6 suitcases",
+
+  "fleetCard.superb.category": "Comfort Sedan",
+  "fleetCard.superb.name": "Skoda Superb",
+  "fleetCard.superb.desc": "A quiet, comfortable sedan for couples and small families on airport pickups and city-to-city transfers.",
+  "fleetCard.superb.seats": "1–4 passengers",
+  "fleetCard.superb.bags": "2 large suitcases",
+
+  "fleetCard.h1.category": "Tour Van",
+  "fleetCard.h1.name": "Hyundai H1",
+  "fleetCard.h1.desc": "A spacious tour van for larger families and small groups, with a generous luggage bay for long journeys.",
+  "fleetCard.h1.seats": "8–14 passengers",
+  "fleetCard.h1.bags": "12 suitcases",
+
+  "fleetCard.vito.category": "Premium Minivan",
+  "fleetCard.vito.name": "Mercedes Vito",
+  "fleetCard.vito.desc": "A premium minivan with sliding doors and flexible seating for families, business travellers and small groups.",
+  "fleetCard.vito.seats": "5–7 passengers",
+  "fleetCard.vito.bags": "6 suitcases",
+
+  "fleetCard.coach.category": "Mini Coach",
+  "fleetCard.coach.name": "Mini Coach",
+  "fleetCard.coach.desc": "A mini coach for group transfers, weddings and organised tours, quoted with the driver and route in advance.",
+  "fleetCard.coach.seats": "15–40 passengers",
+  "fleetCard.coach.bags": "20 suitcases"
 };

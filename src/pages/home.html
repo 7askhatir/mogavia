@@ -97,6 +97,149 @@
   </div>
 </div>
 
+<section class="vehicles" aria-labelledby="vehicles-title">
+  <div class="container">
+    <div class="vehicles__header reveal">
+      <div class="vehicles__head">
+        <div class="vehicles__text">
+          <p class="eyebrow" data-i18n="home.fleetSlider.eyebrow">Our fleet</p>
+          <h2 class="vehicles__title" id="vehicles-title" data-i18n="home.fleetSlider.title">Choose the Perfect Vehicle for Your Journey</h2>
+          <p class="vehicles__sub" data-i18n="home.fleetSlider.sub">Discover our fleet of comfortable private vehicles for transfers and excursions across Morocco.</p>
+        </div>
+        <div class="vehicles__navs">
+          <button class="vehicles__nav vehicles__nav--prev" type="button" data-i18n-aria="home.fleetSlider.prev" aria-label="Previous vehicles">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button class="vehicles__nav vehicles__nav--next" type="button" data-i18n-aria="home.fleetSlider.next" aria-label="Next vehicles">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="vehicles__wrapper">
+      <div class="vehicles__track" data-vehicles-track tabindex="0" role="region" aria-roledescription="carousel" data-i18n-aria="home.fleetSlider.region" aria-label="Vehicle carousel">
+        <article class="vehicles__card reveal">
+          <div class="vehicles__media">
+            <img class="vehicles__img" draggable="false" src="assets/img/fleet-minivan-480.jpg"
+              srcset="assets/img/fleet-minivan-480.jpg 480w, assets/img/fleet-minivan-960.jpg 960w"
+              sizes="(max-width: 720px) 84vw, (max-width: 1100px) 44vw, 282px" width="480" height="320" alt="Skoda Kodiaq 4x4 private SUV for family transfers" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicles__body">
+            <p class="vehicles__category" data-i18n="fleetCard.kodiaq.category">4x4 SUV</p>
+            <h3 class="vehicles__name" data-i18n="fleetCard.kodiaq.name">Skoda Kodiaq 4x4</h3>
+            <p class="vehicles__desc" data-i18n="fleetCard.kodiaq.desc">A capable 4x4 for mountain roads, coastal escapes and family transfers, with room for everyone and their luggage.</p>
+            <div class="vehicles__specs">
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.kodiaq.seats">5–7 passengers</span>
+              </div>
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.kodiaq.bags">6 suitcases</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vehicles__card reveal reveal-delay-1">
+          <div class="vehicles__media">
+            <img class="vehicles__img" draggable="false" src="assets/img/fleet-sedan-480.jpg"
+              srcset="assets/img/fleet-sedan-480.jpg 480w, assets/img/fleet-sedan-960.jpg 960w"
+              sizes="(max-width: 720px) 84vw, (max-width: 1100px) 44vw, 282px" width="480" height="320" alt="Skoda Superb private sedan for airport transfers" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicles__body">
+            <p class="vehicles__category" data-i18n="fleetCard.superb.category">Comfort Sedan</p>
+            <h3 class="vehicles__name" data-i18n="fleetCard.superb.name">Skoda Superb</h3>
+            <p class="vehicles__desc" data-i18n="fleetCard.superb.desc">A quiet, comfortable sedan for couples and small families on airport pickups and city-to-city transfers.</p>
+            <div class="vehicles__specs">
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.superb.seats">1–4 passengers</span>
+              </div>
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.superb.bags">2 large suitcases</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vehicles__card reveal reveal-delay-2">
+          <div class="vehicles__media">
+            <img class="vehicles__img" draggable="false" src="assets/img/fleet-van-480.jpg"
+              srcset="assets/img/fleet-van-480.jpg 480w, assets/img/fleet-van-960.jpg 960w"
+              sizes="(max-width: 720px) 84vw, (max-width: 1100px) 44vw, 282px" width="480" height="672" alt="Hyundai H1 tour van for small groups" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicles__body">
+            <p class="vehicles__category" data-i18n="fleetCard.h1.category">Tour Van</p>
+            <h3 class="vehicles__name" data-i18n="fleetCard.h1.name">Hyundai H1</h3>
+            <p class="vehicles__desc" data-i18n="fleetCard.h1.desc">A spacious tour van for larger families and small groups, with a generous luggage bay for long journeys.</p>
+            <div class="vehicles__specs">
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.h1.seats">8–14 passengers</span>
+              </div>
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.h1.bags">12 suitcases</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vehicles__card reveal reveal-delay-3">
+          <div class="vehicles__media">
+            <img class="vehicles__img" draggable="false" src="assets/img/hero-vito-480.jpg"
+              srcset="assets/img/hero-vito-480.jpg 480w, assets/img/hero-vito-960.jpg 960w"
+              sizes="(max-width: 720px) 84vw, (max-width: 1100px) 44vw, 282px" width="480" height="320" alt="Mercedes Vito premium minivan" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicles__body">
+            <p class="vehicles__category" data-i18n="fleetCard.vito.category">Premium Minivan</p>
+            <h3 class="vehicles__name" data-i18n="fleetCard.vito.name">Mercedes Vito</h3>
+            <p class="vehicles__desc" data-i18n="fleetCard.vito.desc">A premium minivan with sliding doors and flexible seating for families, business travellers and small groups.</p>
+            <div class="vehicles__specs">
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.vito.seats">5–7 passengers</span>
+              </div>
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.vito.bags">6 suitcases</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="vehicles__card reveal">
+          <div class="vehicles__media">
+            <img class="vehicles__img" draggable="false" src="assets/img/fleet-minibus-480.jpg"
+              srcset="assets/img/fleet-minibus-480.jpg 480w, assets/img/fleet-minibus-960.jpg 960w"
+              sizes="(max-width: 720px) 84vw, (max-width: 1100px) 44vw, 282px" width="480" height="446" alt="Mini coach for group transfers and tours" loading="lazy" decoding="async">
+          </div>
+          <div class="vehicles__body">
+            <p class="vehicles__category" data-i18n="fleetCard.coach.category">Mini Coach</p>
+            <h3 class="vehicles__name" data-i18n="fleetCard.coach.name">Mini Coach</h3>
+            <p class="vehicles__desc" data-i18n="fleetCard.coach.desc">A mini coach for group transfers, weddings and organised tours, quoted with the driver and route in advance.</p>
+            <div class="vehicles__specs">
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3"/><path d="M5.5 20a6.5 6.5 0 0 1 13 0"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.coach.seats">15–40 passengers</span>
+              </div>
+              <div class="vehicles__spec">
+                <svg class="icon vehicles__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/><path d="M4 12h16"/></svg>
+                <span class="vehicles__spec-value" data-i18n="fleetCard.coach.bags">20 suitcases</span>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <p class="vehicles__note" data-i18n="home.fleetSlider.note">Models shown are representative. The exact vehicle and capacity are confirmed when you book.</p>
+  </div>
+</section>
+
 <section class="intro">
   <div class="container intro__grid">
     <div class="reveal">

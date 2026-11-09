@@ -629,5 +629,43 @@ window.TTE_STRINGS.ar = {
   "notfound.title": "هذا الطريق لا يؤدي إلى أي مكان.",
   "notfound.text": "الصفحة التي تبحثون عنها انتقلت أو لم تكن موجودة أصلًا. دعونا نعيدكم إلى المسار.",
   "notfound.home": "العودة إلى الرئيسية",
-  "notfound.book": "احجزوا تحويلًا"
+  "notfound.book": "احجزوا تحويلًا",
+
+  "home.fleetSlider.eyebrow": "أسطولنا",
+  "home.fleetSlider.title": "اختر المركبة المثالية لرحلتك",
+  "home.fleetSlider.sub": "اكتشف أسطولنا من المركبات الخاصة المريحة للتنقلات والرحلات في جميع أنحاء المغرب.",
+  "home.fleetSlider.prev": "المركبات السابقة",
+  "home.fleetSlider.next": "المركبات التالية",
+  "home.fleetSlider.region": "معرض المركبات",
+  "home.fleetSlider.note": "الطرازات المعروضة تمثيلية. يتم تأكيد المركبة الدقيقة وسعتها عند الحجز.",
+
+  "fleetCard.kodiaq.category": "سيارة دفع رباعي",
+  "fleetCard.kodiaq.name": "سكودا كودياك 4x4",
+  "fleetCard.kodiaq.desc": "سيارة دفع رباعي قادرة على التعامل مع الطرق الجبلية والرحلات الساحلية والتنقلات العائلية، مع مساحة للجميع وأمتعتهم.",
+  "fleetCard.kodiaq.seats": "5–7 ركاب",
+  "fleetCard.kodiaq.bags": "6 حقائب",
+
+  "fleetCard.superb.category": "سيدان مريحة",
+  "fleetCard.superb.name": "سكودا سوبيرب",
+  "fleetCard.superb.desc": "سيدان هادئة ومريحة للأزواج والعائلات الصغيرة في التنقلات من وإلى المطار وبين المدن.",
+  "fleetCard.superb.seats": "1–4 ركاب",
+  "fleetCard.superb.bags": "حقيبتان كبيرتان",
+
+  "fleetCard.h1.category": "فان سياحي",
+  "fleetCard.h1.name": "هيونداي H1",
+  "fleetCard.h1.desc": "فان واسع للعائلات الكبيرة والمجموعات الصغيرة، مع صندوق أمتعة سخي للرحلات الطويلة.",
+  "fleetCard.h1.seats": "8–14 راكبًا",
+  "fleetCard.h1.bags": "12 حقيبة",
+
+  "fleetCard.vito.category": "مينيفان فاخرة",
+  "fleetCard.vito.name": "مرسيدس فيتو",
+  "fleetCard.vito.desc": "مينيفان فاخرة بأبواب منزلقة ومقاعد مرنة للعائلات ومسافري الأعمال والمجموعات الصغيرة.",
+  "fleetCard.vito.seats": "5–7 ركاب",
+  "fleetCard.vito.bags": "6 حقائب",
+
+  "fleetCard.coach.category": "حافلة صغيرة",
+  "fleetCard.coach.name": "حافلة صغيرة",
+  "fleetCard.coach.desc": "حافلة صغيرة لتنقلات المجموعات وحفلات الزفاف والجولات المنظمة، مع تسعيرة تحدد مع السائق والمسار مسبقًا.",
+  "fleetCard.coach.seats": "15–40 راكبًا",
+  "fleetCard.coach.bags": "20 حقيبة"
 };

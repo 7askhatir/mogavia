@@ -297,6 +297,153 @@
     });
   }
 
+  /* Vehicles carousel ------------------------------------------------------- */
+  function initVehiclesCarousel() {
+    var track = document.querySelector("[data-vehicles-track]");
+    var prevBtn = document.querySelector(".vehicles__nav--prev");
+    var nextBtn = document.querySelector(".vehicles__nav--next");
+
+    if (!track || !prevBtn || !nextBtn) return;
+
+    var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    function getGap() {
+      var styles = getComputedStyle(track);
+      var gap = parseFloat(styles.columnGap || styles.gap);
+      return isNaN(gap) ? 24 : gap;
+    }
+
+    function getStep() {
+      var card = track.querySelector(".vehicles__card");
+      if (!card) return 0;
+      return Math.round(card.getBoundingClientRect().width + getGap());
+    }
+
+    function getMaxScroll() {
+      return Math.max(0, track.scrollWidth - track.clientWidth);
+    }
+
+    function isRtl() {
+      return getComputedStyle(track).direction === "rtl";
+    }
+
+    function getPosition() {
+      return Math.abs(track.scrollLeft);
+    }
+
+    function scrollToPosition(position) {
+      track.scrollTo({
+        left: isRtl() ? -position : position,
+        behavior: reduceMotion.matches ? "auto" : "smooth"
+      });
+    }
+
+    function goNext() {
+      var max = getMaxScroll();
+      var step = getStep();
+      if (max <= 1 || !step) return;
+
+      var position = getPosition();
+
+      if (position >= max - 1) {
+        scrollToPosition(0);
+        return;
+      }
+
+      scrollToPosition(Math.min(position + step, max));
+    }
+
+    function goPrev() {
+      var max = getMaxScroll();
+      var step = getStep();
+      if (max <= 1 || !step) return;
+
+      var position = getPosition();
+
+      if (position <= 1) {
+        scrollToPosition(max);
+        return;
+      }
+
+      scrollToPosition(Math.max(position - step, 0));
+    }
+
+    prevBtn.addEventListener("click", goPrev);
+    nextBtn.addEventListener("click", goNext);
+
+    track.addEventListener("keydown", function (event) {
+      var rtl = isRtl();
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        rtl ? goPrev() : goNext();
+      } else if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        rtl ? goNext() : goPrev();
+      }
+    });
+
+    /* Mouse and pen drag. Touch keeps the native swipe and momentum. */
+    var pointerId = null;
+    var startX = 0;
+    var startY = 0;
+    var startScroll = 0;
+    var axis = null;
+    var dragSign = -1;
+
+    function endDrag() {
+      if (pointerId === null) return;
+      pointerId = null;
+      axis = null;
+      track.style.scrollBehavior = "";
+      track.classList.remove("is-dragging");
+    }
+
+    track.addEventListener("pointerdown", function (event) {
+      if (event.pointerType === "touch" || event.button !== 0) return;
+
+      pointerId = event.pointerId;
+      startX = event.clientX;
+      startY = event.clientY;
+      startScroll = track.scrollLeft;
+      axis = null;
+      dragSign = isRtl() ? 1 : -1;
+      track.style.scrollBehavior = "auto";
+      track.classList.add("is-dragging");
+
+      if (track.setPointerCapture) {
+        try {
+          track.setPointerCapture(event.pointerId);
+        } catch (error) {
+          /* ignore */
+        }
+      }
+    });
+
+    track.addEventListener("pointermove", function (event) {
+      if (event.pointerId !== pointerId) return;
+
+      var dx = event.clientX - startX;
+      var dy = event.clientY - startY;
+
+      if (!axis) {
+        if (Math.abs(dx) < 5 && Math.abs(dy) < 5) return;
+        axis = Math.abs(dx) > Math.abs(dy) ? "x" : "y";
+        if (axis === "y") {
+          endDrag();
+          return;
+        }
+      }
+
+      if (axis !== "x") return;
+
+      event.preventDefault();
+      track.scrollLeft = startScroll + (dragSign * dx);
+    }, { passive: false });
+
+    track.addEventListener("pointerup", endDrag);
+    track.addEventListener("pointercancel", endDrag);
+  }
+
   function init() {
     syncContactDetails();
     initHeader();
@@ -305,6 +452,7 @@
     initReveal();
     initContactForm();
     initYear();
+    initVehiclesCarousel();
   }
 
   document.addEventListener("DOMContentLoaded", init);

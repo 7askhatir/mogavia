@@ -629,5 +629,43 @@ window.TTE_STRINGS.es = {
   "notfound.title": "Este camino no lleva a ninguna parte.",
   "notfound.text": "La página que buscaba se ha trasladado o nunca existió. Vamos a devolverle a la ruta.",
   "notfound.home": "Volver al inicio",
-  "notfound.book": "Reservar un traslado"
+  "notfound.book": "Reservar un traslado",
+
+  "home.fleetSlider.eyebrow": "Nuestra flota",
+  "home.fleetSlider.title": "Elige el vehículo perfecto para tu viaje",
+  "home.fleetSlider.sub": "Descubre nuestra flota de vehículos privados cómodos para traslados y excursiones por todo Marruecos.",
+  "home.fleetSlider.prev": "Vehículos anteriores",
+  "home.fleetSlider.next": "Vehículos siguientes",
+  "home.fleetSlider.region": "Carrusel de vehículos",
+  "home.fleetSlider.note": "Los modelos mostrados son orientativos. El vehículo exacto y su capacidad se confirman al reservar.",
+
+  "fleetCard.kodiaq.category": "SUV 4x4",
+  "fleetCard.kodiaq.name": "Skoda Kodiaq 4x4",
+  "fleetCard.kodiaq.desc": "Un 4x4 capaz para carreteras de montaña, escapadas a la costa y traslados familiares, con espacio para todos y su equipaje.",
+  "fleetCard.kodiaq.seats": "5–7 pasajeros",
+  "fleetCard.kodiaq.bags": "6 maletas",
+
+  "fleetCard.superb.category": "Sedán confort",
+  "fleetCard.superb.name": "Skoda Superb",
+  "fleetCard.superb.desc": "Un sedán silencioso y cómodo para parejas y familias pequeñas en traslados al aeropuerto y entre ciudades.",
+  "fleetCard.superb.seats": "1–4 pasajeros",
+  "fleetCard.superb.bags": "2 maletas grandes",
+
+  "fleetCard.h1.category": "Furgoneta turística",
+  "fleetCard.h1.name": "Hyundai H1",
+  "fleetCard.h1.desc": "Una furgoneta espaciosa para familias numerosas y grupos pequeños, con un maletero generoso para viajes largos.",
+  "fleetCard.h1.seats": "8–14 pasajeros",
+  "fleetCard.h1.bags": "12 maletas",
+
+  "fleetCard.vito.category": "Minivan premium",
+  "fleetCard.vito.name": "Mercedes Vito",
+  "fleetCard.vito.desc": "Una minivan premium con puertas correderas y asientos flexibles para familias, viajeros de negocios y grupos pequeños.",
+  "fleetCard.vito.seats": "5–7 pasajeros",
+  "fleetCard.vito.bags": "6 maletas",
+
+  "fleetCard.coach.category": "Minibús",
+  "fleetCard.coach.name": "Minibús",
+  "fleetCard.coach.desc": "Un minibús para traslados de grupo, bodas y circuitos organizados, con presupuesto según conductor y ruta de antemano.",
+  "fleetCard.coach.seats": "15–40 pasajeros",
+  "fleetCard.coach.bags": "20 maletas"
 };
