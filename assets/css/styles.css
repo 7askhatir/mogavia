@@ -5639,6 +5639,10 @@ html[lang="ar"] .hero__title {
   margin-bottom: 36px;
 }
 
+.vehicles .container {
+  width: min(100% - (var(--gutter) * 2), 1120px);
+}
+
 .vehicles__head {
   display: flex;
   align-items: flex-end;
@@ -5749,12 +5753,31 @@ html[lang="ar"] .hero__title {
 }
 
 .vehicles__media {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   aspect-ratio: 4 / 3;
   padding: 18px 18px 4px;
   background: radial-gradient(120% 90% at 50% 0%, #fbfdfb 0%, #eef6f1 100%);
+}
+
+.vehicles__badge {
+  position: absolute;
+  inset-block-start: 14px;
+  inset-inline-start: 14px;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--fleet-ink);
+  color: #ffffff;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  box-shadow: 0 10px 24px -14px rgba(18, 59, 45, 0.65);
 }
 
 .vehicles__img {
