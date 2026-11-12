@@ -6,7 +6,7 @@
   <title>Book a Private Taxi in Morocco | Taxi Tours Essaouira</title>
   <meta name="description" content="Request a private taxi transfer or excursion from Essaouira. Choose your route, date and vehicle, and confirm easily on WhatsApp.">
   <link rel="canonical" href="https://www.taxitoursessaouira.com/book.html">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="noindex,follow">
   <meta name="theme-color" content="#050909">
   <meta name="format-detection" content="telephone=no">
 
@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
 
-  <link rel="preload" as="image" href="assets/img/book-hero-960.jpg" imagesrcset="assets/img/book-hero-960.jpg 960w, assets/img/book-hero-1600.jpg 1600w" imagesizes="100vw">
+  
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="assets/js/config.js" defer></script>
@@ -240,36 +240,23 @@
 <body data-page="book" class="page-book">
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
 
-  <header class="site-header" data-header>
-    <div class="container site-header__inner">
-      <div class="header-left">
-        <a class="brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
-          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-            <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
-            <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
-            <path d="M16 14.2h16M24 14.2v16.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path class="brand__wave" d="M14 35.2c3.4-3.1 6.7-4.6 10-4.6s6.6 1.5 10 4.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
-          </svg>
-          <span class="brand__text">
-            <span class="brand__name">TAXI TOURS</span>
-            <span class="brand__place">ESSAOUIRA</span>
-          </span>
-        </a>
-        <div class="lang-switch header-lang">
-          <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>
-          <label class="sr-only" for="language-select" data-i18n="topbar.langLabel">Language</label>
-          <select id="language-select" class="lang-select" data-language-select data-i18n-aria="topbar.langLabel">
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="ar">AR</option>
-            <option value="es">ES</option>
-          </select>
-          <svg class="icon icon--10 lang-switch__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-        </div>
-      </div>
+  <header class="site-nav" data-site-nav>
+    <div class="site-nav__inner">
+      <a class="brand site-nav__brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
+          <path d="M16 14.2h16M24 14.2v16.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="brand__wave" d="M14 35.2c3.4-3.1 6.7-4.6 10-4.6s6.6 1.5 10 4.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">TAXI TOURS</span>
+          <span class="brand__place">ESSAOUIRA</span>
+        </span>
+      </a>
 
-      <nav class="main-nav" aria-label="Main navigation" data-i18n-aria="nav.aria">
-        <ul class="main-nav__list">
+      <nav class="site-nav__links" aria-label="Main navigation" data-i18n-aria="nav.aria">
+        <ul>
           <li><a href="index.html" data-nav="home" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" data-nav="about" data-i18n="nav.about">About Us</a></li>
           <li><a href="services.html" data-nav="services" data-i18n="nav.services">Taxi Services</a></li>
@@ -281,24 +268,39 @@
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <a class="header-phone" href="tel:+212600000000" data-phone-link aria-label="+212 600 000 000">
-          <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <div class="site-nav__actions">
+        <label class="nav-lang">
+          <svg class="nav-lang__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+          <span class="sr-only" data-i18n="topbar.langLabel">Language</span>
+          <select class="nav-lang__select" data-language-select data-i18n-aria="topbar.langLabel">
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">AR</option>
+            <option value="es">ES</option>
+          </select>
+          <svg class="nav-lang__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </label>
+
+        <a class="nav-phone" href="tel:+212600000000" data-phone-link aria-label="+212 600 000 000">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span data-phone-display>+212 600 000 000</span>
         </a>
-        <a class="btn btn--primary btn--sm header-book" href="book.html" data-i18n="nav.bookShort">Book Now</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" data-menu-toggle>
+
+        <a class="nav-cta" href="book.html" data-i18n="nav.bookShort">Book Now</a>
+
+        <button class="nav-burger" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu" data-nav-burger>
           <span class="sr-only" data-i18n="a11y.openMenu">Open menu</span>
-          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="nav-burger__lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <div class="mobile-backdrop" data-mobile-backdrop hidden></div>
-  <div class="mobile-panel" id="mobile-panel" data-mobile-panel aria-hidden="true">
-    <div class="mobile-panel__head">
-      <a class="brand brand--mobile" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
+  <div class="nav-scrim" data-nav-scrim hidden></div>
+
+  <aside class="nav-drawer" id="nav-drawer" aria-hidden="true" data-nav-drawer>
+    <div class="nav-drawer__head">
+      <a class="brand nav-drawer__brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
         <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
           <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
           <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
@@ -307,282 +309,105 @@
         </svg>
         <span class="brand__text"><span class="brand__name">TAXI TOURS</span><span class="brand__place">ESSAOUIRA</span></span>
       </a>
-      <button class="mobile-panel__close" type="button" data-menu-close>
-        <span class="sr-only" data-i18n="a11y.closeMenu">Close menu</span>
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      <button class="nav-drawer__close" type="button" aria-label="Close menu" data-i18n-aria="a11y.closeMenu" data-nav-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
-    <nav class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="nav.aria">
+
+    <nav class="nav-drawer__nav" aria-label="Mobile navigation" data-i18n-aria="nav.aria">
       <ul>
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="services.html" data-i18n="nav.services">Taxi Services</a></li>
-        <li><a href="excursions.html" data-i18n="nav.excursions">Excursions</a></li>
-        <li><a href="destinations.html" data-i18n="nav.destinations">Destinations</a></li>
-        <li><a href="fleet.html" data-i18n="nav.fleet">Fleet</a></li>
-        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="index.html" data-nav="home" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-nav="about" data-i18n="nav.about">About Us</a></li>
+        <li><a href="services.html" data-nav="services" data-i18n="nav.services">Taxi Services</a></li>
+        <li><a href="excursions.html" data-nav="excursions" data-i18n="nav.excursions">Excursions</a></li>
+        <li><a href="destinations.html" data-nav="destinations" data-i18n="nav.destinations">Destinations</a></li>
+        <li><a href="fleet.html" data-nav="fleet" data-i18n="nav.fleet">Fleet</a></li>
+        <li><a href="blog.html" data-nav="blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="mobile-panel__foot">
-      <a class="btn btn--primary btn--block" href="book.html" data-i18n="nav.book">Book Now</a>
-      <div class="mobile-panel__lang">
-        <label for="mobile-language-select" data-i18n="topbar.langLabel">Language</label>
-        <select id="mobile-language-select" class="lang-select lang-select--mobile" data-language-select>
-          <option value="en">English</option>
-          <option value="fr">Fran&ccedil;ais</option>
-          <option value="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
-          <option value="es">Espa&ntilde;ol</option>
-        </select>
-      </div>
-      <a class="mobile-panel__contact" href="tel:+212600000000" data-phone-link>
-        <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+
+    <div class="nav-drawer__foot">
+      <a class="nav-drawer__cta" href="book.html" data-i18n="nav.book">Book Now</a>
+
+      <label class="nav-drawer__lang">
+        <span class="nav-drawer__lang-label" data-i18n="topbar.langLabel">Language</span>
+        <span class="nav-drawer__select-wrap">
+          <select class="nav-drawer__select" data-language-select>
+            <option value="en">English</option>
+            <option value="fr">Fran&ccedil;ais</option>
+            <option value="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
+            <option value="es">Espa&ntilde;ol</option>
+          </select>
+        </span>
+      </label>
+
+      <a class="nav-drawer__contact" href="tel:+212600000000" data-phone-link>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span data-phone-display>+212 600 000 000</span>
       </a>
-      <a class="mobile-panel__contact" href="mailto:booking@taxitoursessaouira.com" data-email-link>
-        <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+      <a class="nav-drawer__contact" href="mailto:booking@taxitoursessaouira.com" data-email-link>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
         <span data-email-display>booking@taxitoursessaouira.com</span>
       </a>
+      <a class="nav-drawer__contact" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span data-i18n="footer.whatsapp">WhatsApp us</span>
+      </a>
     </div>
+  </aside>
+
+  <nav class="mobile-dock" aria-label="Mobile navigation" data-mobile-dock>
+    <a class="dock-item" href="index.html" data-nav="home">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+      <span class="dock-item__label" data-i18n="nav.home">Home</span>
+    </a>
+    <button class="dock-item" type="button" data-dock-lang aria-expanded="false" aria-controls="dock-lang-panel" aria-haspopup="dialog" aria-label="Language" data-i18n-aria="nav.language">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+      <span class="dock-item__label" data-dock-lang-label>EN</span>
+    </button>
+    <a class="dock-item" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="dock-item__label" data-i18n="nav.chat">Chat</span>
+    </a>
+    <button class="dock-item" type="button" data-dock-currency aria-expanded="false" aria-controls="dock-currency-panel" aria-haspopup="dialog" aria-label="Currency" data-i18n-aria="nav.currency">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="14" rx="3"/><path d="M2.5 10h19"/><path d="M16 14.5h3"/></svg>
+      <span class="dock-item__label" data-dock-currency-label>EUR</span>
+    </button>
+    <a class="dock-item" href="contact.html" data-nav="contact">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      <span class="dock-item__label" data-i18n="nav.profile">Profile</span>
+    </a>
+  </nav>
+
+  <div class="dock-sheet" id="dock-lang-panel" data-dock-lang-panel role="dialog" aria-label="Language" data-i18n-aria="nav.language" hidden>
+    <p class="dock-sheet__title" data-i18n="nav.language">Language</p>
+    <div class="dock-sheet__options">
+      <button class="dock-sheet__option" type="button" data-set-lang="en" aria-pressed="false"><span>English</span><span class="dock-sheet__code">EN</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="fr" aria-pressed="false"><span>Fran&ccedil;ais</span><span class="dock-sheet__code">FR</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="ar" aria-pressed="false"><span lang="ar" dir="rtl">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span><span class="dock-sheet__code">AR</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="es" aria-pressed="false"><span>Espa&ntilde;ol</span><span class="dock-sheet__code">ES</span></button>
+    </div>
+  </div>
+
+  <div class="dock-sheet" id="dock-currency-panel" data-dock-currency-panel role="dialog" aria-label="Currency" data-i18n-aria="nav.currency" hidden>
+    <p class="dock-sheet__title" data-i18n="nav.currency">Currency</p>
+    <p class="dock-sheet__current"><span data-dock-currency-label>EUR</span><span class="dock-sheet__symbol">&euro; &middot; Euro</span></p>
+    <p class="dock-sheet__note" data-i18n="nav.currencyNote">All fares are quoted in euros (EUR). The final price is confirmed with you before travel.</p>
   </div>
 
   <main id="main">
-<section class="page-hero">
-  <div class="page-hero__media">
-    <img src="assets/img/book-hero-960.jpg" srcset="assets/img/book-hero-960.jpg 960w, assets/img/book-hero-1600.jpg 1600w" sizes="100vw" width="960" height="497" alt="A private car waiting on a quiet road in Morocco" fetchpriority="high" decoding="async">
-  </div>
-  <div class="container page-hero__inner">
-    <nav aria-label="Breadcrumb">
-      <ol class="breadcrumb">
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><span data-i18n="nav.book">Book Now</span></li>
-      </ol>
-    </nav>
-    <p class="eyebrow" data-i18n="book.hero.eyebrow">Book now</p>
-    <h1 data-i18n="book.hero.title">Request your private transfer.</h1>
-    <p class="page-hero__sub" data-i18n="book.hero.sub">Choose your route, date and vehicle. We will confirm the final details on WhatsApp or by email.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="booking-trust reveal">
-      <div class="booking-trust__item">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
-        <div><strong data-i18n="book.trust1t">No online payment</strong><span data-i18n="book.trust1d">You pay your driver directly after confirmation.</span></div>
-      </div>
-      <div class="booking-trust__item">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M7 8h10M7 16h10"/></svg>
-        <div><strong data-i18n="book.trust2t">Clear quote</strong><span data-i18n="book.trust2d">The estimate is for the whole vehicle, one way.</span></div>
-      </div>
-      <div class="booking-trust__item">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg>
-        <div><strong data-i18n="book.trust3t">Human confirmation</strong><span data-i18n="book.trust3d">A real person checks every request before travel.</span></div>
-      </div>
-    </div>
-
-    <div class="booking-layout">
-      <div class="booking-form-wrap reveal">
-        <h2 data-i18n="book.form.title">Your travel details</h2>
-        <p class="small muted" data-i18n="book.form.text">Fields marked * are required. This is a request, not an automatic confirmation.</p>
-
-        <form data-booking-form novalidate>
-          <section class="form-section" aria-labelledby="booking-journey-title">
-            <div class="form-section__head">
-              <span class="form-section__num" aria-hidden="true">01</span>
-              <h3 class="form-section__title" id="booking-journey-title" data-i18n="book.section1.title">The journey</h3>
-            </div>
-            <div class="form-grid">
-              <div class="field">
-                <label class="field__label" for="booking-pickup"><span data-i18n="booking.pickup">Pickup point</span> <span class="req" aria-hidden="true">*</span></label>
-                <select id="booking-pickup" name="pickup" required data-booking-from>
-                  <option value="" data-i18n="booking.selectPlaceholder">Select a place</option>
-                </select>
-                <p class="field__hint" data-i18n="booking.pickupHint">Riad, hotel, airport or address</p>
-                <p class="field__error" data-error-for="pickup" hidden></p>
-              </div>
-              <div class="field">
-                <label class="field__label" for="booking-destination"><span data-i18n="booking.destination">Destination</span> <span class="req" aria-hidden="true">*</span></label>
-                <select id="booking-destination" name="destination" required data-booking-to>
-                  <option value="" data-i18n="booking.selectPlaceholder">Select a place</option>
-                </select>
-                <p class="field__hint" data-i18n="booking.pickupHint">Riad, hotel, airport or address</p>
-                <p class="field__error" data-error-for="destination" hidden></p>
-              </div>
-              <div class="field">
-                <label class="field__label" for="booking-date"><span data-i18n="booking.date">Travel date</span> <span class="req" aria-hidden="true">*</span></label>
-                <input type="date" id="booking-date" name="date" required data-booking-date>
-                <p class="field__hint" data-i18n="booking.dateHint">Today or a future date</p>
-                <p class="field__error" data-error-for="date" hidden></p>
-              </div>
-              <div class="field">
-                <label class="field__label" for="booking-time"><span data-i18n="booking.time">Pickup time</span> <span class="req" aria-hidden="true">*</span></label>
-                <input type="time" id="booking-time" name="time" required>
-                <p class="field__hint" data-i18n="booking.timeHint">Early and late pickups can be arranged on request.</p>
-                <p class="field__error" data-error-for="time" hidden></p>
-              </div>
-              <div class="field">
-                <label class="field__label" for="booking-passengers"><span data-i18n="booking.passengers">Passengers</span> <span class="req" aria-hidden="true">*</span></label>
-                <input type="number" id="booking-passengers" name="passengers" min="1" max="40" value="2" inputmode="numeric" required>
-                <p class="field__hint" data-i18n="booking.passengersHint">Children count as passengers. Tell us their ages in the notes.</p>
-                <p class="field__error" data-error-for="passengers" hidden></p>
-              </div>
-            </div>
-          </section>
-
-          <section class="form-section" aria-labelledby="booking-vehicle-title">
-            <div class="form-section__head">
-              <span class="form-section__num" aria-hidden="true">02</span>
-              <h3 class="form-section__title" id="booking-vehicle-title" data-i18n="book.section2.title">Choose your vehicle</h3>
-            </div>
-            <p class="form-section__hint" data-i18n="book.section2.hint">We suggest a category based on your group size. You can choose another eligible option.</p>
-            <div class="field field--full">
-              <div class="vehicle-grid" data-vehicle-options></div>
-              <p class="field__error" data-error-for="vehicle" hidden></p>
-            </div>
-          </section>
-
-          <section class="form-section" aria-labelledby="booking-details-title">
-            <div class="form-section__head">
-              <span class="form-section__num" aria-hidden="true">03</span>
-              <h3 class="form-section__title" id="booking-details-title" data-i18n="book.section3.title">Your details</h3>
-            </div>
-            <div class="form-grid">
-              <div class="field">
-                <label class="field__label" for="booking-fullname"><span data-i18n="booking.fullname">Full name</span> <span class="req" aria-hidden="true">*</span></label>
-                <input type="text" id="booking-fullname" name="fullname" autocomplete="name" required>
-                <p class="field__error" data-error-for="fullname" hidden></p>
-              </div>
-              <div class="field">
-                <label class="field__label" for="booking-email"><span data-i18n="booking.email">Email</span> <span class="req" aria-hidden="true">*</span></label>
-                <input type="email" id="booking-email" name="email" autocomplete="email" required>
-                <p class="field__error" data-error-for="email" hidden></p>
-              </div>
-              <div class="field">
-                <label class="field__label" for="booking-phone"><span data-i18n="booking.phone">Phone or WhatsApp</span> <span class="req" aria-hidden="true">*</span></label>
-                <input type="tel" id="booking-phone" name="phone" autocomplete="tel" required>
-                <p class="field__hint" data-i18n="booking.phoneHint">Include your country code.</p>
-                <p class="field__error" data-error-for="phone" hidden></p>
-              </div>
-              <div class="field field--full">
-                <label class="field__label" for="booking-notes" data-i18n="booking.notes">Notes (optional)</label>
-                <textarea id="booking-notes" name="notes" rows="4" data-i18n-placeholder="booking.notesHint" placeholder="Flight number, luggage, child seats, stops or anything else we should know."></textarea>
-                <p class="field__hint" data-i18n="booking.notesHint">Flight number, luggage, child seats, stops or anything else we should know.</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="form-section" aria-labelledby="booking-confirm-title">
-            <div class="form-section__head">
-              <span class="form-section__num" aria-hidden="true">04</span>
-              <h3 class="form-section__title" id="booking-confirm-title" data-i18n="book.section4.title">Confirm your request</h3>
-            </div>
-            <div class="field field--full">
-              <label class="check-row" for="booking-consent">
-                <input type="checkbox" id="booking-consent" name="consent" required>
-                <span data-i18n-html="booking.consent">I agree to the <a href="terms.html">booking terms and privacy note</a>.</span>
-              </label>
-              <p class="field__error" data-error-for="consent" hidden></p>
-            </div>
-            <p class="form-note" data-i18n="book.formNote">Your request is saved in this browser and opens in WhatsApp or email. Your booking is confirmed only when we reply with the vehicle and final price.</p>
-            <button class="btn btn--primary btn--block" type="submit" data-i18n="booking.submit">Send booking request</button>
-            <p class="form-status" data-booking-status hidden></p>
-          </section>
-        </form>
-      </div>
-
-      <aside class="booking-aside reveal reveal-delay-1" aria-labelledby="summary-title">
-        <div class="summary-card">
-          <h2 class="summary-card__title" id="summary-title" data-i18n="booking.summary.title">Your request</h2>
-          <p class="summary-empty" data-i18n="booking.summary.empty">Choose your route and travel details to see the estimated fare.</p>
-          <dl class="summary-rows">
-            <div class="summary-row"><dt data-i18n="booking.summary.route">Route</dt><dd data-summary-route>—</dd></div>
-            <div class="summary-row"><dt data-i18n="booking.summary.date">Date</dt><dd data-summary-date>—</dd></div>
-            <div class="summary-row"><dt data-i18n="booking.summary.time">Pickup time</dt><dd data-summary-time>—</dd></div>
-            <div class="summary-row"><dt data-i18n="booking.summary.passengers">Passengers</dt><dd data-summary-pax>—</dd></div>
-            <div class="summary-row"><dt data-i18n="booking.summary.vehicle">Vehicle</dt><dd data-summary-vehicle>—</dd></div>
-          </dl>
-          <hr class="summary-divider">
-          <div class="summary-total">
-            <span class="summary-total__label" data-i18n="booking.summary.total">Estimated total</span>
-            <span class="summary-total__value"><span data-summary-total>—</span><span class="summary-total__unit" data-i18n="booking.summary.unit">whole vehicle · one way</span></span>
-          </div>
-          <p class="summary-note" data-i18n="booking.summary.note">Indicative price. The final quote is confirmed before travel. No payment is taken on this website.</p>
-          <div class="summary-actions">
-            <a class="btn btn--primary" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general" data-i18n="common.whatsapp">Chat on WhatsApp</a>
-            <a class="btn btn--secondary" href="tel:+212600000000" data-phone-link data-i18n="common.callUs">Call us</a>
-          </div>
-          <ul class="summary-trust">
-            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="book.trust1t">No online payment</span></li>
-            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg><span data-i18n="book.trust3t">Human confirmation</span></li>
-          </ul>
-        </div>
-      </aside>
+<section class="coming-soon">
+  <div class="container coming-soon__inner">
+    <p class="eyebrow" data-i18n="comingSoon.eyebrow">Coming soon</p>
+    <h1 data-i18n="nav.book">Book Now</h1>
+    <p class="coming-soon__text" data-i18n="comingSoon.text">This page is under construction. Full details are on the way &mdash; in the meantime, contact us directly and we will be happy to help.</p>
+    <div class="coming-soon__actions">
+      <a class="btn btn--primary" href="index.html" data-i18n="comingSoon.home">Back to home</a>
+      <a class="btn btn--ghost-light" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-i18n="footer.whatsapp">WhatsApp us</a>
     </div>
   </div>
 </section>
-
-<section class="section section--sky">
-  <div class="container">
-    <div class="section-head section-head--center reveal">
-      <p class="eyebrow eyebrow--center" data-i18n="faq.title">Questions before you book</p>
-      <h2 data-i18n="book.faq.title">Booking questions</h2>
-    </div>
-    <div class="faq-list reveal">
-      <details class="faq-item">
-        <summary data-i18n="faq.confirm.q">How do I confirm a booking?</summary>
-        <div class="faq-item__body"><p data-i18n="faq.confirm.a">Send your request through the booking form, then confirm the details with us on WhatsApp. Your journey is confirmed when we reply with the vehicle, meeting point and final price.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary data-i18n="faq.payment.q">Is a deposit or online payment required?</summary>
-        <div class="faq-item__body"><p data-i18n="faq.payment.a">No online payment is taken by this website. Payment is arranged directly with your driver; confirm the accepted method when you book.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary data-i18n="faq.flight.q">What happens if my flight is delayed?</summary>
-        <div class="faq-item__body"><p data-i18n="faq.flight.a">Share your flight number when booking. We monitor arrival times and adjust the pickup for delays.</p></div>
-      </details>
-      <details class="faq-item">
-        <summary data-i18n="faq.child.q">Can I request a child seat?</summary>
-        <div class="faq-item__body"><p data-i18n="faq.child.a">Tell us the ages of any children travelling and we will confirm the best available option before your journey.</p></div>
-      </details>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="container">
-    <div class="cta-panel reveal">
-      <div>
-        <h2 data-i18n="book.cta.title">Prefer to arrange it by message?</h2>
-        <p data-i18n="book.cta.text">Send your route and date on WhatsApp and we will reply with the same clear quote.</p>
-      </div>
-      <div class="cta-panel__actions">
-        <a class="btn btn--primary" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general" data-i18n="common.whatsapp">Chat on WhatsApp</a>
-        <a class="btn btn--secondary" href="contact.html" data-i18n="common.contactUs">Contact us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<dialog class="booking-dialog" id="booking-dialog" aria-labelledby="booking-dialog-title">
-  <div class="dialog__panel">
-    <button class="dialog__close" type="button" data-dialog-close data-i18n-aria="booking.dialog.close" aria-label="Close">
-      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
-    </button>
-    <span class="dialog__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 5 5L20 7"/></svg></span>
-    <h2 id="booking-dialog-title" data-i18n="booking.dialog.title">Request ready</h2>
-    <p data-i18n="booking.dialog.text">Your details are prepared. Send them on WhatsApp or by email so we can confirm your journey.</p>
-    <p class="dialog__ref" data-dialog-ref></p>
-    <dl class="dialog__summary" data-dialog-summary></dl>
-    <p class="dialog__note" data-i18n="booking.dialog.note">This is not a confirmed booking until we reply. No payment has been taken.</p>
-    <div class="dialog__actions">
-      <a class="btn btn--primary" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-dialog-wa data-i18n="booking.dialog.whatsapp">Send on WhatsApp</a>
-      <a class="btn btn--secondary" href="mailto:booking@taxitoursessaouira.com" data-dialog-email data-i18n="booking.dialog.email">Send by email</a>
-      <button class="btn btn--secondary" type="button" data-dialog-close data-i18n="booking.dialog.close">Close</button>
-    </div>
-  </div>
-</dialog>
-
   </main>
 
   <footer class="site-footer">

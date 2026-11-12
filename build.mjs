@@ -243,6 +243,26 @@ function preloadLink(page) {
   return `<link rel="preload" as="image" href="assets/img/${page.preload}-960.jpg" imagesrcset="${page.preloadSrcset}" imagesizes="${page.preloadSizes}">`;
 }
 
+function isComingSoon(page) {
+  return Boolean(config.comingSoon) && page.page !== "home" && page.page !== "404";
+}
+
+function comingSoonContent(page) {
+  const titleKey = page.page === "terms" ? "comingSoon.termsTitle" : `nav.${page.page}`;
+  const title = page.page === "terms" ? "Booking Terms & Privacy" : pageNames[page.page] || page.title;
+  return `<section class="coming-soon">
+  <div class="container coming-soon__inner">
+    <p class="eyebrow" data-i18n="comingSoon.eyebrow">Coming soon</p>
+    <h1 data-i18n="${titleKey}">${title}</h1>
+    <p class="coming-soon__text" data-i18n="comingSoon.text">This page is under construction. Full details are on the way &mdash; in the meantime, contact us directly and we will be happy to help.</p>
+    <div class="coming-soon__actions">
+      <a class="btn btn--primary" href="index.html" data-i18n="comingSoon.home">Back to home</a>
+      <a class="btn btn--ghost-light" href="https://wa.me/${config.whatsapp}" target="_blank" rel="noopener" data-i18n="footer.whatsapp">WhatsApp us</a>
+    </div>
+  </div>
+</section>`;
+}
+
 let built = 0;
 for (const page of config.pages) {
   const bodyPath = path.join(root, "src", "pages", `${page.file}.html`);
@@ -252,6 +272,7 @@ for (const page of config.pages) {
   }
   const body = fs.readFileSync(bodyPath, "utf8");
   const canonical = page.slug ? `${base}/${page.slug}` : `${base}/`;
+  const comingSoon = isComingSoon(page);
   let html = layout;
   const replacements = {
     TITLE: page.title,
@@ -264,11 +285,11 @@ for (const page of config.pages) {
     OG_IMAGE: page.ogImage,
     OG_WIDTH: String(page.ogWidth || 960),
     OG_HEIGHT: String(page.ogHeight || 640),
-    ROBOTS: page.robots || "index,follow,max-image-preview:large",
-    PRELOAD_LINK: preloadLink(page),
+    ROBOTS: comingSoon ? "noindex,follow" : page.robots || "index,follow,max-image-preview:large",
+    PRELOAD_LINK: comingSoon ? "" : preloadLink(page),
     PAGE: page.page,
     BODY_CLASS: page.bodyClass || "",
-    CONTENT: body,
+    CONTENT: comingSoon ? comingSoonContent(page) : body,
     EXTRA_HEAD: schemaMarkup(page),
     PHONE: config.phone,
     PHONE_DISPLAY: config.phoneDisplay,
@@ -288,7 +309,7 @@ const today = new Date().toISOString().slice(0, 10);
 let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
 sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
 for (const page of config.pages) {
-  if (!page.sitemap) continue;
+  if (!page.sitemap || isComingSoon(page)) continue;
   const loc = page.slug ? `${base}/${page.slug}` : `${base}/`;
   sitemap += `  <url>\n    <loc>${loc}</loc>\n    <lastmod>${today}</lastmod>\n    <changefreq>${page.sitemap.changefreq}</changefreq>\n    <priority>${page.sitemap.priority}</priority>\n  </url>\n`;
 }

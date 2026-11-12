@@ -200,36 +200,23 @@
 <body data-page="home" class="page-home">
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
 
-  <header class="site-header" data-header>
-    <div class="container site-header__inner">
-      <div class="header-left">
-        <a class="brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
-          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-            <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
-            <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
-            <path d="M16 14.2h16M24 14.2v16.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path class="brand__wave" d="M14 35.2c3.4-3.1 6.7-4.6 10-4.6s6.6 1.5 10 4.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
-          </svg>
-          <span class="brand__text">
-            <span class="brand__name">TAXI TOURS</span>
-            <span class="brand__place">ESSAOUIRA</span>
-          </span>
-        </a>
-        <div class="lang-switch header-lang">
-          <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>
-          <label class="sr-only" for="language-select" data-i18n="topbar.langLabel">Language</label>
-          <select id="language-select" class="lang-select" data-language-select data-i18n-aria="topbar.langLabel">
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="ar">AR</option>
-            <option value="es">ES</option>
-          </select>
-          <svg class="icon icon--10 lang-switch__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-        </div>
-      </div>
+  <header class="site-nav" data-site-nav>
+    <div class="site-nav__inner">
+      <a class="brand site-nav__brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
+          <path d="M16 14.2h16M24 14.2v16.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="brand__wave" d="M14 35.2c3.4-3.1 6.7-4.6 10-4.6s6.6 1.5 10 4.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">TAXI TOURS</span>
+          <span class="brand__place">ESSAOUIRA</span>
+        </span>
+      </a>
 
-      <nav class="main-nav" aria-label="Main navigation" data-i18n-aria="nav.aria">
-        <ul class="main-nav__list">
+      <nav class="site-nav__links" aria-label="Main navigation" data-i18n-aria="nav.aria">
+        <ul>
           <li><a href="index.html" data-nav="home" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" data-nav="about" data-i18n="nav.about">About Us</a></li>
           <li><a href="services.html" data-nav="services" data-i18n="nav.services">Taxi Services</a></li>
@@ -241,24 +228,39 @@
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <a class="header-phone" href="tel:+212600000000" data-phone-link aria-label="+212 600 000 000">
-          <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <div class="site-nav__actions">
+        <label class="nav-lang">
+          <svg class="nav-lang__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+          <span class="sr-only" data-i18n="topbar.langLabel">Language</span>
+          <select class="nav-lang__select" data-language-select data-i18n-aria="topbar.langLabel">
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">AR</option>
+            <option value="es">ES</option>
+          </select>
+          <svg class="nav-lang__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </label>
+
+        <a class="nav-phone" href="tel:+212600000000" data-phone-link aria-label="+212 600 000 000">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span data-phone-display>+212 600 000 000</span>
         </a>
-        <a class="btn btn--primary btn--sm header-book" href="book.html" data-i18n="nav.bookShort">Book Now</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" data-menu-toggle>
+
+        <a class="nav-cta" href="book.html" data-i18n="nav.bookShort">Book Now</a>
+
+        <button class="nav-burger" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu" data-nav-burger>
           <span class="sr-only" data-i18n="a11y.openMenu">Open menu</span>
-          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="nav-burger__lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <div class="mobile-backdrop" data-mobile-backdrop hidden></div>
-  <div class="mobile-panel" id="mobile-panel" data-mobile-panel aria-hidden="true">
-    <div class="mobile-panel__head">
-      <a class="brand brand--mobile" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
+  <div class="nav-scrim" data-nav-scrim hidden></div>
+
+  <aside class="nav-drawer" id="nav-drawer" aria-hidden="true" data-nav-drawer>
+    <div class="nav-drawer__head">
+      <a class="brand nav-drawer__brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
         <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
           <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
           <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
@@ -267,43 +269,91 @@
         </svg>
         <span class="brand__text"><span class="brand__name">TAXI TOURS</span><span class="brand__place">ESSAOUIRA</span></span>
       </a>
-      <button class="mobile-panel__close" type="button" data-menu-close>
-        <span class="sr-only" data-i18n="a11y.closeMenu">Close menu</span>
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      <button class="nav-drawer__close" type="button" aria-label="Close menu" data-i18n-aria="a11y.closeMenu" data-nav-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
-    <nav class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="nav.aria">
+
+    <nav class="nav-drawer__nav" aria-label="Mobile navigation" data-i18n-aria="nav.aria">
       <ul>
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="services.html" data-i18n="nav.services">Taxi Services</a></li>
-        <li><a href="excursions.html" data-i18n="nav.excursions">Excursions</a></li>
-        <li><a href="destinations.html" data-i18n="nav.destinations">Destinations</a></li>
-        <li><a href="fleet.html" data-i18n="nav.fleet">Fleet</a></li>
-        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="index.html" data-nav="home" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-nav="about" data-i18n="nav.about">About Us</a></li>
+        <li><a href="services.html" data-nav="services" data-i18n="nav.services">Taxi Services</a></li>
+        <li><a href="excursions.html" data-nav="excursions" data-i18n="nav.excursions">Excursions</a></li>
+        <li><a href="destinations.html" data-nav="destinations" data-i18n="nav.destinations">Destinations</a></li>
+        <li><a href="fleet.html" data-nav="fleet" data-i18n="nav.fleet">Fleet</a></li>
+        <li><a href="blog.html" data-nav="blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="mobile-panel__foot">
-      <a class="btn btn--primary btn--block" href="book.html" data-i18n="nav.book">Book Now</a>
-      <div class="mobile-panel__lang">
-        <label for="mobile-language-select" data-i18n="topbar.langLabel">Language</label>
-        <select id="mobile-language-select" class="lang-select lang-select--mobile" data-language-select>
-          <option value="en">English</option>
-          <option value="fr">Fran&ccedil;ais</option>
-          <option value="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
-          <option value="es">Espa&ntilde;ol</option>
-        </select>
-      </div>
-      <a class="mobile-panel__contact" href="tel:+212600000000" data-phone-link>
-        <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+
+    <div class="nav-drawer__foot">
+      <a class="nav-drawer__cta" href="book.html" data-i18n="nav.book">Book Now</a>
+
+      <label class="nav-drawer__lang">
+        <span class="nav-drawer__lang-label" data-i18n="topbar.langLabel">Language</span>
+        <span class="nav-drawer__select-wrap">
+          <select class="nav-drawer__select" data-language-select>
+            <option value="en">English</option>
+            <option value="fr">Fran&ccedil;ais</option>
+            <option value="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
+            <option value="es">Espa&ntilde;ol</option>
+          </select>
+        </span>
+      </label>
+
+      <a class="nav-drawer__contact" href="tel:+212600000000" data-phone-link>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span data-phone-display>+212 600 000 000</span>
       </a>
-      <a class="mobile-panel__contact" href="mailto:booking@taxitoursessaouira.com" data-email-link>
-        <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+      <a class="nav-drawer__contact" href="mailto:booking@taxitoursessaouira.com" data-email-link>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
         <span data-email-display>booking@taxitoursessaouira.com</span>
       </a>
+      <a class="nav-drawer__contact" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span data-i18n="footer.whatsapp">WhatsApp us</span>
+      </a>
     </div>
+  </aside>
+
+  <nav class="mobile-dock" aria-label="Mobile navigation" data-mobile-dock>
+    <a class="dock-item" href="index.html" data-nav="home">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+      <span class="dock-item__label" data-i18n="nav.home">Home</span>
+    </a>
+    <button class="dock-item" type="button" data-dock-lang aria-expanded="false" aria-controls="dock-lang-panel" aria-haspopup="dialog" aria-label="Language" data-i18n-aria="nav.language">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+      <span class="dock-item__label" data-dock-lang-label>EN</span>
+    </button>
+    <a class="dock-item" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="dock-item__label" data-i18n="nav.chat">Chat</span>
+    </a>
+    <button class="dock-item" type="button" data-dock-currency aria-expanded="false" aria-controls="dock-currency-panel" aria-haspopup="dialog" aria-label="Currency" data-i18n-aria="nav.currency">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="14" rx="3"/><path d="M2.5 10h19"/><path d="M16 14.5h3"/></svg>
+      <span class="dock-item__label" data-dock-currency-label>EUR</span>
+    </button>
+    <a class="dock-item" href="contact.html" data-nav="contact">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      <span class="dock-item__label" data-i18n="nav.profile">Profile</span>
+    </a>
+  </nav>
+
+  <div class="dock-sheet" id="dock-lang-panel" data-dock-lang-panel role="dialog" aria-label="Language" data-i18n-aria="nav.language" hidden>
+    <p class="dock-sheet__title" data-i18n="nav.language">Language</p>
+    <div class="dock-sheet__options">
+      <button class="dock-sheet__option" type="button" data-set-lang="en" aria-pressed="false"><span>English</span><span class="dock-sheet__code">EN</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="fr" aria-pressed="false"><span>Fran&ccedil;ais</span><span class="dock-sheet__code">FR</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="ar" aria-pressed="false"><span lang="ar" dir="rtl">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span><span class="dock-sheet__code">AR</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="es" aria-pressed="false"><span>Espa&ntilde;ol</span><span class="dock-sheet__code">ES</span></button>
+    </div>
+  </div>
+
+  <div class="dock-sheet" id="dock-currency-panel" data-dock-currency-panel role="dialog" aria-label="Currency" data-i18n-aria="nav.currency" hidden>
+    <p class="dock-sheet__title" data-i18n="nav.currency">Currency</p>
+    <p class="dock-sheet__current"><span data-dock-currency-label>EUR</span><span class="dock-sheet__symbol">&euro; &middot; Euro</span></p>
+    <p class="dock-sheet__note" data-i18n="nav.currencyNote">All fares are quoted in euros (EUR). The final price is confirmed with you before travel.</p>
   </div>
 
   <main id="main">
@@ -318,7 +368,6 @@
     <div class="hero__content">
       <p class="eyebrow eyebrow--light" data-i18n="home.hero.eyebrow">Private travel · Essaouira, Morocco</p>
       <h1 class="hero__title" data-i18n-html="home.hero.title">Private Taxi Transfers<br>&amp; Excursions in <em>Morocco</em></h1>
-      <p class="hero__sub" data-i18n="home.hero.sub">Travel in comfort and discover Morocco with a professional driver. Private vehicles, clear prices and door-to-door service from Essaouira.</p>
       <div class="hero__actions">
         <a class="btn btn--primary" href="book.html" data-i18n="home.hero.book">Book your taxi</a>
         <a class="btn btn--ghost-light" href="excursions.html" data-i18n="home.hero.explore">Explore our excursions</a>
@@ -650,6 +699,71 @@
         </div>
       </article>
     </div>
+  </div>
+</section>
+
+<section class="stay" aria-labelledby="stay-title">
+  <div class="container">
+    <div class="stay__head reveal">
+      <div class="stay__head-copy">
+        <p class="eyebrow eyebrow--light" data-i18n="home.stay.eyebrow">Stay a little longer</p>
+        <h2 class="stay__title" id="stay-title" data-i18n="home.stay.title">Villas &amp; apartments, by the day</h2>
+        <p class="stay__sub" data-i18n="home.stay.sub">Arriving for a night, a weekend or a slower week? We also arrange private villas and comfortable apartments in Essaouira, available by the day and looked after by the same local team.</p>
+      </div>
+      <div class="stay__actions">
+        <a class="btn btn--primary" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.stay" data-i18n="home.stay.cta">Ask about availability</a>
+        <a class="stay__contact" href="contact.html"><span data-i18n="home.stay.contact">Contact us</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+
+    <div class="stay__grid">
+      <article class="stay-card reveal">
+        <div class="stay-card__media">
+          <img src="assets/img/stay-villa-960.jpg" srcset="assets/img/stay-villa-480.jpg 480w, assets/img/stay-villa-960.jpg 960w" sizes="(max-width: 720px) 92vw, (max-width: 1060px) 44vw, 30vw" width="960" height="640" alt="Private villa with a swimming pool and terrace in Morocco" loading="lazy" decoding="async">
+          <span class="stay-card__badge" data-i18n="home.stay.option1.badge">Villa</span>
+        </div>
+        <div class="stay-card__body">
+          <h3 class="stay-card__title" data-i18n="home.stay.option1.title">Private villa</h3>
+          <p class="stay-card__desc" data-i18n="home.stay.option1.desc">A whole house with a garden, terrace and pool — space for family or friends, with housekeeping on request.</p>
+          <div class="stay-card__foot">
+            <span class="stay-card__meta" data-i18n="home.stay.option1.meta">Up to 8 guests · pool &amp; garden</span>
+            <a class="stay-card__link" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.stay"><span data-i18n="home.stay.cardCta">Enquire</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="stay-card reveal reveal-delay-1">
+        <div class="stay-card__media">
+          <img src="assets/img/stay-apartment-960.jpg" srcset="assets/img/stay-apartment-480.jpg 480w, assets/img/stay-apartment-960.jpg 960w" sizes="(max-width: 720px) 92vw, (max-width: 1060px) 44vw, 30vw" width="960" height="653" alt="Bright contemporary living room in a Moroccan apartment" loading="lazy" decoding="async">
+          <span class="stay-card__badge" data-i18n="home.stay.option2.badge">Medina</span>
+        </div>
+        <div class="stay-card__body">
+          <h3 class="stay-card__title" data-i18n="home.stay.option2.title">Medina apartment</h3>
+          <p class="stay-card__desc" data-i18n="home.stay.option2.desc">A characterful apartment inside the ramparts, steps from the port, the square and the beach. Ideal for couples.</p>
+          <div class="stay-card__foot">
+            <span class="stay-card__meta" data-i18n="home.stay.option2.meta">2–4 guests · walk to the beach</span>
+            <a class="stay-card__link" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.stay"><span data-i18n="home.stay.cardCta">Enquire</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+
+      <article class="stay-card reveal reveal-delay-2">
+        <div class="stay-card__media">
+          <img src="assets/img/stay-terrace-960.jpg" srcset="assets/img/stay-terrace-480.jpg 480w, assets/img/stay-terrace-960.jpg 960w" sizes="(max-width: 720px) 92vw, (max-width: 1060px) 44vw, 30vw" width="960" height="720" alt="Terrace overlooking the ocean in Tangier, Morocco" loading="lazy" decoding="async">
+          <span class="stay-card__badge" data-i18n="home.stay.option3.badge">Beachside</span>
+        </div>
+        <div class="stay-card__body">
+          <h3 class="stay-card__title" data-i18n="home.stay.option3.title">Beachside apartment</h3>
+          <p class="stay-card__desc" data-i18n="home.stay.option3.desc">A bright apartment near the shore with an ocean-facing terrace, for easy days and Atlantic sunsets.</p>
+          <div class="stay-card__foot">
+            <span class="stay-card__meta" data-i18n="home.stay.option3.meta">2–5 guests · sea view</span>
+            <a class="stay-card__link" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.stay"><span data-i18n="home.stay.cardCta">Enquire</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <p class="stay__note reveal" data-i18n="home.stay.note">Daily rates depend on the season, the property and the length of stay. Send us your dates for a clear quote.</p>
   </div>
 </section>
 

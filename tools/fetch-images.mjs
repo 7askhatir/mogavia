@@ -40,6 +40,9 @@ const items = [
   ["blog-road", "36909833/pexels-photo-36909833/free-photo-of-scenic-road-through-moroccan-countryside-at-dusk.jpeg", [480, 960]],
   ["blog-season", "27523570/pexels-photo-27523570/free-photo-of-a-man-is-standing-on-the-rocks-near-the-ocean.jpeg", [480, 960]],
   ["blog-surf", "36586462/pexels-photo-36586462/free-photo-of-surfer-on-rugged-moroccan-coastline.jpeg", [480, 960]],
+  ["stay-villa", "21273694/pexels-photo-21273694.jpeg", [480, 960]],
+  ["stay-apartment", "20445895/pexels-photo-20445895.jpeg", [480, 960]],
+  ["stay-terrace", "1101982/pexels-photo-1101982.jpeg", [480, 960]],
 ];
 
 const jobs = [];

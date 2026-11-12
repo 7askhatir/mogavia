@@ -6,7 +6,7 @@
   <title>Our Fleet | Private Taxi Vehicles for 1–15+ Passengers</title>
   <meta name="description" content="Comfortable sedans, minivans, vans and minibuses for private transfers in Morocco. See capacities, luggage space and indicative fares.">
   <link rel="canonical" href="https://www.taxitoursessaouira.com/fleet.html">
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="robots" content="noindex,follow">
   <meta name="theme-color" content="#050909">
   <meta name="format-detection" content="telephone=no">
 
@@ -40,7 +40,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Tajawal:wght@400;500;700&amp;display=swap" rel="stylesheet">
 
-  <link rel="preload" as="image" href="assets/img/fleet-hero-960.jpg" imagesrcset="assets/img/fleet-hero-960.jpg 960w, assets/img/fleet-hero-1600.jpg 1600w" imagesizes="100vw">
+  
   <link rel="stylesheet" href="assets/css/styles.css">
   <script>document.documentElement.classList.add('js');</script>
   <script src="assets/js/config.js" defer></script>
@@ -202,36 +202,23 @@
 <body data-page="fleet" class="page-fleet">
   <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to main content</a>
 
-  <header class="site-header" data-header>
-    <div class="container site-header__inner">
-      <div class="header-left">
-        <a class="brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
-          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
-            <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
-            <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
-            <path d="M16 14.2h16M24 14.2v16.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path class="brand__wave" d="M14 35.2c3.4-3.1 6.7-4.6 10-4.6s6.6 1.5 10 4.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
-          </svg>
-          <span class="brand__text">
-            <span class="brand__name">TAXI TOURS</span>
-            <span class="brand__place">ESSAOUIRA</span>
-          </span>
-        </a>
-        <div class="lang-switch header-lang">
-          <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18a15 15 0 0 1 0-18z"/></svg>
-          <label class="sr-only" for="language-select" data-i18n="topbar.langLabel">Language</label>
-          <select id="language-select" class="lang-select" data-language-select data-i18n-aria="topbar.langLabel">
-            <option value="en">EN</option>
-            <option value="fr">FR</option>
-            <option value="ar">AR</option>
-            <option value="es">ES</option>
-          </select>
-          <svg class="icon icon--10 lang-switch__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-        </div>
-      </div>
+  <header class="site-nav" data-site-nav>
+    <div class="site-nav__inner">
+      <a class="brand site-nav__brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
+        <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
+          <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
+          <path d="M16 14.2h16M24 14.2v16.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path class="brand__wave" d="M14 35.2c3.4-3.1 6.7-4.6 10-4.6s6.6 1.5 10 4.6" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">TAXI TOURS</span>
+          <span class="brand__place">ESSAOUIRA</span>
+        </span>
+      </a>
 
-      <nav class="main-nav" aria-label="Main navigation" data-i18n-aria="nav.aria">
-        <ul class="main-nav__list">
+      <nav class="site-nav__links" aria-label="Main navigation" data-i18n-aria="nav.aria">
+        <ul>
           <li><a href="index.html" data-nav="home" data-i18n="nav.home">Home</a></li>
           <li><a href="about.html" data-nav="about" data-i18n="nav.about">About Us</a></li>
           <li><a href="services.html" data-nav="services" data-i18n="nav.services">Taxi Services</a></li>
@@ -243,24 +230,39 @@
         </ul>
       </nav>
 
-      <div class="header-actions">
-        <a class="header-phone" href="tel:+212600000000" data-phone-link aria-label="+212 600 000 000">
-          <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <div class="site-nav__actions">
+        <label class="nav-lang">
+          <svg class="nav-lang__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+          <span class="sr-only" data-i18n="topbar.langLabel">Language</span>
+          <select class="nav-lang__select" data-language-select data-i18n-aria="topbar.langLabel">
+            <option value="en">EN</option>
+            <option value="fr">FR</option>
+            <option value="ar">AR</option>
+            <option value="es">ES</option>
+          </select>
+          <svg class="nav-lang__chevron" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+        </label>
+
+        <a class="nav-phone" href="tel:+212600000000" data-phone-link aria-label="+212 600 000 000">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span data-phone-display>+212 600 000 000</span>
         </a>
-        <a class="btn btn--primary btn--sm header-book" href="book.html" data-i18n="nav.bookShort">Book Now</a>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-panel" data-menu-toggle>
+
+        <a class="nav-cta" href="book.html" data-i18n="nav.bookShort">Book Now</a>
+
+        <button class="nav-burger" type="button" aria-expanded="false" aria-controls="nav-drawer" aria-label="Open menu" data-nav-burger>
           <span class="sr-only" data-i18n="a11y.openMenu">Open menu</span>
-          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span class="nav-burger__lines" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <div class="mobile-backdrop" data-mobile-backdrop hidden></div>
-  <div class="mobile-panel" id="mobile-panel" data-mobile-panel aria-hidden="true">
-    <div class="mobile-panel__head">
-      <a class="brand brand--mobile" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
+  <div class="nav-scrim" data-nav-scrim hidden></div>
+
+  <aside class="nav-drawer" id="nav-drawer" aria-hidden="true" data-nav-drawer>
+    <div class="nav-drawer__head">
+      <a class="brand nav-drawer__brand" href="index.html" aria-label="Taxi Tours Essaouira &mdash; Home">
         <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
           <circle cx="24" cy="24" r="22.4" fill="none" stroke="currentColor" stroke-width="1.1"/>
           <circle cx="24" cy="24" r="18.2" fill="none" stroke="currentColor" stroke-width=".55" opacity=".45"/>
@@ -269,247 +271,105 @@
         </svg>
         <span class="brand__text"><span class="brand__name">TAXI TOURS</span><span class="brand__place">ESSAOUIRA</span></span>
       </a>
-      <button class="mobile-panel__close" type="button" data-menu-close>
-        <span class="sr-only" data-i18n="a11y.closeMenu">Close menu</span>
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      <button class="nav-drawer__close" type="button" aria-label="Close menu" data-i18n-aria="a11y.closeMenu" data-nav-close>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
     </div>
-    <nav class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="nav.aria">
+
+    <nav class="nav-drawer__nav" aria-label="Mobile navigation" data-i18n-aria="nav.aria">
       <ul>
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><a href="about.html" data-i18n="nav.about">About Us</a></li>
-        <li><a href="services.html" data-i18n="nav.services">Taxi Services</a></li>
-        <li><a href="excursions.html" data-i18n="nav.excursions">Excursions</a></li>
-        <li><a href="destinations.html" data-i18n="nav.destinations">Destinations</a></li>
-        <li><a href="fleet.html" data-i18n="nav.fleet">Fleet</a></li>
-        <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
-        <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="index.html" data-nav="home" data-i18n="nav.home">Home</a></li>
+        <li><a href="about.html" data-nav="about" data-i18n="nav.about">About Us</a></li>
+        <li><a href="services.html" data-nav="services" data-i18n="nav.services">Taxi Services</a></li>
+        <li><a href="excursions.html" data-nav="excursions" data-i18n="nav.excursions">Excursions</a></li>
+        <li><a href="destinations.html" data-nav="destinations" data-i18n="nav.destinations">Destinations</a></li>
+        <li><a href="fleet.html" data-nav="fleet" data-i18n="nav.fleet">Fleet</a></li>
+        <li><a href="blog.html" data-nav="blog" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
-    <div class="mobile-panel__foot">
-      <a class="btn btn--primary btn--block" href="book.html" data-i18n="nav.book">Book Now</a>
-      <div class="mobile-panel__lang">
-        <label for="mobile-language-select" data-i18n="topbar.langLabel">Language</label>
-        <select id="mobile-language-select" class="lang-select lang-select--mobile" data-language-select>
-          <option value="en">English</option>
-          <option value="fr">Fran&ccedil;ais</option>
-          <option value="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
-          <option value="es">Espa&ntilde;ol</option>
-        </select>
-      </div>
-      <a class="mobile-panel__contact" href="tel:+212600000000" data-phone-link>
-        <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+
+    <div class="nav-drawer__foot">
+      <a class="nav-drawer__cta" href="book.html" data-i18n="nav.book">Book Now</a>
+
+      <label class="nav-drawer__lang">
+        <span class="nav-drawer__lang-label" data-i18n="topbar.langLabel">Language</span>
+        <span class="nav-drawer__select-wrap">
+          <select class="nav-drawer__select" data-language-select>
+            <option value="en">English</option>
+            <option value="fr">Fran&ccedil;ais</option>
+            <option value="ar">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</option>
+            <option value="es">Espa&ntilde;ol</option>
+          </select>
+        </span>
+      </label>
+
+      <a class="nav-drawer__contact" href="tel:+212600000000" data-phone-link>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         <span data-phone-display>+212 600 000 000</span>
       </a>
-      <a class="mobile-panel__contact" href="mailto:booking@taxitoursessaouira.com" data-email-link>
-        <svg class="icon icon--16" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
+      <a class="nav-drawer__contact" href="mailto:booking@taxitoursessaouira.com" data-email-link>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="m22 6-10 7L2 6"/></svg>
         <span data-email-display>booking@taxitoursessaouira.com</span>
       </a>
+      <a class="nav-drawer__contact" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span data-i18n="footer.whatsapp">WhatsApp us</span>
+      </a>
     </div>
+  </aside>
+
+  <nav class="mobile-dock" aria-label="Mobile navigation" data-mobile-dock>
+    <a class="dock-item" href="index.html" data-nav="home">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>
+      <span class="dock-item__label" data-i18n="nav.home">Home</span>
+    </a>
+    <button class="dock-item" type="button" data-dock-lang aria-expanded="false" aria-controls="dock-lang-panel" aria-haspopup="dialog" aria-label="Language" data-i18n-aria="nav.language">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a15 15 0 0 1 0 18"/><path d="M12 3a15 15 0 0 0 0 18"/></svg>
+      <span class="dock-item__label" data-dock-lang-label>EN</span>
+    </button>
+    <a class="dock-item" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-wa data-wa-message="wa.general">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      <span class="dock-item__label" data-i18n="nav.chat">Chat</span>
+    </a>
+    <button class="dock-item" type="button" data-dock-currency aria-expanded="false" aria-controls="dock-currency-panel" aria-haspopup="dialog" aria-label="Currency" data-i18n-aria="nav.currency">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="14" rx="3"/><path d="M2.5 10h19"/><path d="M16 14.5h3"/></svg>
+      <span class="dock-item__label" data-dock-currency-label>EUR</span>
+    </button>
+    <a class="dock-item" href="contact.html" data-nav="contact">
+      <svg class="dock-item__icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+      <span class="dock-item__label" data-i18n="nav.profile">Profile</span>
+    </a>
+  </nav>
+
+  <div class="dock-sheet" id="dock-lang-panel" data-dock-lang-panel role="dialog" aria-label="Language" data-i18n-aria="nav.language" hidden>
+    <p class="dock-sheet__title" data-i18n="nav.language">Language</p>
+    <div class="dock-sheet__options">
+      <button class="dock-sheet__option" type="button" data-set-lang="en" aria-pressed="false"><span>English</span><span class="dock-sheet__code">EN</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="fr" aria-pressed="false"><span>Fran&ccedil;ais</span><span class="dock-sheet__code">FR</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="ar" aria-pressed="false"><span lang="ar" dir="rtl">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span><span class="dock-sheet__code">AR</span></button>
+      <button class="dock-sheet__option" type="button" data-set-lang="es" aria-pressed="false"><span>Espa&ntilde;ol</span><span class="dock-sheet__code">ES</span></button>
+    </div>
+  </div>
+
+  <div class="dock-sheet" id="dock-currency-panel" data-dock-currency-panel role="dialog" aria-label="Currency" data-i18n-aria="nav.currency" hidden>
+    <p class="dock-sheet__title" data-i18n="nav.currency">Currency</p>
+    <p class="dock-sheet__current"><span data-dock-currency-label>EUR</span><span class="dock-sheet__symbol">&euro; &middot; Euro</span></p>
+    <p class="dock-sheet__note" data-i18n="nav.currencyNote">All fares are quoted in euros (EUR). The final price is confirmed with you before travel.</p>
   </div>
 
   <main id="main">
-<section class="page-hero">
-  <div class="page-hero__media">
-    <img src="assets/img/fleet-hero-960.jpg" srcset="assets/img/fleet-hero-960.jpg 960w, assets/img/fleet-hero-1600.jpg 1600w" sizes="100vw" width="960" height="640" alt="A line of private transfer vehicles on a Moroccan road" fetchpriority="high" decoding="async">
-  </div>
-  <div class="container page-hero__inner">
-    <nav aria-label="Breadcrumb">
-      <ol class="breadcrumb">
-        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
-        <li><span data-i18n="nav.fleet">Fleet</span></li>
-      </ol>
-    </nav>
-    <p class="eyebrow" data-i18n="fleet.hero.eyebrow">Our fleet</p>
-    <h1 data-i18n="fleet.hero.title">The right vehicle for the road.</h1>
-    <p class="page-hero__sub" data-i18n="fleet.hero.sub">Private, air-conditioned vehicles for solo travellers, families and groups of up to 40 — matched to your route and luggage.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container split">
-    <div class="split__body reveal">
-      <p class="eyebrow" data-i18n="fleet.intro.eyebrow">Comfort by design</p>
-      <h2 data-i18n="fleet.intro.title">Space for people, bags and the long way round.</h2>
-      <p data-i18n="fleet.intro.p1">We match the vehicle to your group, luggage and route. Every option is private and driven by a local driver. The categories below are representative; the exact model is confirmed with your booking.</p>
-      <p data-i18n="fleet.intro.p2">If you are unsure, tell us the number of passengers and large suitcases. We would rather send one comfortable vehicle than squeeze everyone into the wrong one.</p>
-    </div>
-    <div class="split__media reveal reveal-delay-1">
-      <img src="assets/img/fleet-minivan-960.jpg" srcset="assets/img/fleet-minivan-480.jpg 480w, assets/img/fleet-minivan-960.jpg 960w" sizes="(max-width: 900px) 92vw, 44vw" width="960" height="640" alt="A private minivan ready for a family transfer in Morocco" loading="lazy" decoding="async">
+<section class="coming-soon">
+  <div class="container coming-soon__inner">
+    <p class="eyebrow" data-i18n="comingSoon.eyebrow">Coming soon</p>
+    <h1 data-i18n="nav.fleet">Fleet</h1>
+    <p class="coming-soon__text" data-i18n="comingSoon.text">This page is under construction. Full details are on the way &mdash; in the meantime, contact us directly and we will be happy to help.</p>
+    <div class="coming-soon__actions">
+      <a class="btn btn--primary" href="index.html" data-i18n="comingSoon.home">Back to home</a>
+      <a class="btn btn--ghost-light" href="https://wa.me/212600000000" target="_blank" rel="noopener" data-i18n="footer.whatsapp">WhatsApp us</a>
     </div>
   </div>
 </section>
-
-<section class="section section--sand">
-  <div class="container">
-    <div class="section-head section-head--center reveal">
-      <p class="eyebrow eyebrow--center" data-i18n="fleet.hero.eyebrow">Our fleet</p>
-      <h2 data-i18n="fleet.hero.title">The right vehicle for the road.</h2>
-    </div>
-
-    <div class="fleet-list">
-      <article class="fleet-item reveal" id="sedan">
-        <div class="fleet-item__media">
-          <img src="assets/img/fleet-sedan-960.jpg" srcset="assets/img/fleet-sedan-480.jpg 480w, assets/img/fleet-sedan-960.jpg 960w" sizes="(max-width: 900px) 92vw, 42vw" width="960" height="640" alt="A comfortable private sedan used for airport transfers" loading="lazy" decoding="async">
-        </div>
-        <div class="fleet-item__body">
-          <h2 data-i18n="fleet.sedan.name">Comfort Sedan</h2>
-          <p class="fleet-item__cap" data-i18n="fleet.sedan.cap">1–4 passengers</p>
-          <p data-i18n="fleet.sedan.desc">A quiet, economical choice for couples and small families on city-to-city transfers and airport pickups.</p>
-          <div class="spec-grid">
-            <div><span class="spec__label" data-i18n="fleet.spec.passengers">Passengers</span><span class="spec__value" data-i18n="fleet.sedan.cap">1–4 passengers</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.luggage">Luggage</span><span class="spec__value" data-i18n="fleet.sedan.luggage">2 large suitcases</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.best">Best for</span><span class="spec__value" data-i18n="fleet.sedan.best">Best for couples and solo travellers</span></div>
-          </div>
-          <ul class="chips">
-            <li data-i18n="fleet.sedan.f1">Air conditioning</li>
-            <li data-i18n="fleet.sedan.f2">2 large suitcases</li>
-            <li data-i18n="fleet.sedan.f3">Phone charging</li>
-            <li data-i18n="fleet.sedan.f4">Bottled water</li>
-          </ul>
-          <a class="btn btn--secondary" href="book.html" data-i18n="nav.book">Book Now</a>
-        </div>
-      </article>
-
-      <article class="fleet-item fleet-item--reverse reveal" id="minivan">
-        <div class="fleet-item__media">
-          <img src="assets/img/fleet-minivan-960.jpg" srcset="assets/img/fleet-minivan-480.jpg 480w, assets/img/fleet-minivan-960.jpg 960w" sizes="(max-width: 900px) 92vw, 42vw" width="960" height="640" alt="A premium minivan with space for a family and luggage" loading="lazy" decoding="async">
-        </div>
-        <div class="fleet-item__body">
-          <h2 data-i18n="fleet.minivan.name">Premium Minivan</h2>
-          <p class="fleet-item__cap" data-i18n="fleet.minivan.cap">5–7 passengers</p>
-          <p data-i18n="fleet.minivan.desc">Extra space and a higher seating position for families and small groups, with room for luggage and day bags.</p>
-          <div class="spec-grid">
-            <div><span class="spec__label" data-i18n="fleet.spec.passengers">Passengers</span><span class="spec__value" data-i18n="fleet.minivan.cap">5–7 passengers</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.luggage">Luggage</span><span class="spec__value" data-i18n="fleet.minivan.luggage">6 suitcases</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.best">Best for</span><span class="spec__value" data-i18n="fleet.minivan.best">Best for families</span></div>
-          </div>
-          <ul class="chips">
-            <li data-i18n="fleet.minivan.f1">Air conditioning</li>
-            <li data-i18n="fleet.minivan.f2">6 suitcases</li>
-            <li data-i18n="fleet.minivan.f3">Sliding doors</li>
-            <li data-i18n="fleet.minivan.f4">Child seat on request</li>
-          </ul>
-          <a class="btn btn--secondary" href="book.html" data-i18n="nav.book">Book Now</a>
-        </div>
-      </article>
-
-      <article class="fleet-item reveal" id="van">
-        <div class="fleet-item__media">
-          <img src="assets/img/fleet-van-960.jpg" srcset="assets/img/fleet-van-480.jpg 480w, assets/img/fleet-van-960.jpg 960w" sizes="(max-width: 900px) 92vw, 42vw" width="960" height="1344" alt="A touring van for small groups travelling in Morocco" loading="lazy" decoding="async">
-        </div>
-        <div class="fleet-item__body">
-          <h2 data-i18n="fleet.van.name">Tour Van</h2>
-          <p class="fleet-item__cap" data-i18n="fleet.van.cap">8–14 passengers</p>
-          <p data-i18n="fleet.van.desc">A full-size van for larger families, friend groups and small tour groups, with a generous luggage bay.</p>
-          <div class="spec-grid">
-            <div><span class="spec__label" data-i18n="fleet.spec.passengers">Passengers</span><span class="spec__value" data-i18n="fleet.van.cap">8–14 passengers</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.luggage">Luggage</span><span class="spec__value" data-i18n="fleet.van.luggage">12 suitcases</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.best">Best for</span><span class="spec__value" data-i18n="fleet.van.best">Best for small groups</span></div>
-          </div>
-          <ul class="chips">
-            <li data-i18n="fleet.van.f1">Air conditioning</li>
-            <li data-i18n="fleet.van.f2">12 suitcases</li>
-            <li data-i18n="fleet.van.f3">High roof</li>
-            <li data-i18n="fleet.van.f4">Long-distance comfort</li>
-          </ul>
-          <a class="btn btn--secondary" href="book.html" data-i18n="nav.book">Book Now</a>
-        </div>
-      </article>
-
-      <article class="fleet-item fleet-item--reverse reveal" id="coach">
-        <div class="fleet-item__media">
-          <img src="assets/img/fleet-minibus-960.jpg" srcset="assets/img/fleet-minibus-480.jpg 480w, assets/img/fleet-minibus-960.jpg 960w" sizes="(max-width: 900px) 92vw, 42vw" width="960" height="892" alt="A mini coach for group transfers and organised tours" loading="lazy" decoding="async">
-        </div>
-        <div class="fleet-item__body">
-          <h2 data-i18n="fleet.coach.name">Mini Coach</h2>
-          <p class="fleet-item__cap" data-i18n="fleet.coach.cap">15–40 passengers</p>
-          <p data-i18n="fleet.coach.desc">A mini coach for group transfers, weddings and organised tours, quoted with the driver and route in advance.</p>
-          <div class="spec-grid">
-            <div><span class="spec__label" data-i18n="fleet.spec.passengers">Passengers</span><span class="spec__value" data-i18n="fleet.coach.cap">15–40 passengers</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.luggage">Luggage</span><span class="spec__value" data-i18n="fleet.coach.luggage">20 suitcases</span></div>
-            <div><span class="spec__label" data-i18n="fleet.spec.best">Best for</span><span class="spec__value" data-i18n="fleet.coach.best">Best for groups and events</span></div>
-          </div>
-          <ul class="chips">
-            <li data-i18n="fleet.coach.f1">Air conditioning</li>
-            <li data-i18n="fleet.coach.f2">20 suitcases</li>
-            <li data-i18n="fleet.coach.f3">Group seating</li>
-            <li data-i18n="fleet.coach.f4">Route planning</li>
-          </ul>
-          <a class="btn btn--secondary" href="book.html" data-i18n="nav.book">Book Now</a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head section-head--center reveal">
-      <p class="eyebrow eyebrow--center" data-i18n="fleet.table.eyebrow">Fares</p>
-      <h2 data-i18n="fleet.table.title">Indicative fares by vehicle</h2>
-      <p data-i18n="fleet.table.caption">One-way prices in euros for the whole vehicle. Final quote confirmed before travel.</p>
-    </div>
-
-    <div class="table-scroll reveal">
-      <table class="price-table">
-        <caption data-i18n="fleet.table.caption">One-way prices in euros for the whole vehicle. Final quote confirmed before travel.</caption>
-        <thead>
-          <tr>
-            <th scope="col" data-i18n="fleet.table.route">Route</th>
-            <th scope="col" data-i18n="fleet.table.sedan">Sedan 1–4</th>
-            <th scope="col" data-i18n="fleet.table.minivan">Minivan 5–7</th>
-            <th scope="col" data-i18n="fleet.table.van">Van 8–14</th>
-            <th scope="col" data-i18n="fleet.table.coach">Mini coach 15+</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><span data-i18n="route.essaouiraMarrakech">Essaouira → Marrakech</span><span class="table-sub" data-i18n="common.privateTransfer">Private transfer</span></td>
-            <td>€90</td><td>€130</td><td>€170</td><td>€240</td>
-          </tr>
-          <tr>
-            <td><span data-i18n="route.rakEssaouira">Marrakech Airport → Essaouira</span><span class="table-sub" data-i18n="common.privateTransfer">Private transfer</span></td>
-            <td>€100</td><td>€140</td><td>€180</td><td>€250</td>
-          </tr>
-          <tr>
-            <td><span data-i18n="route.essaouiraAgadir">Essaouira → Agadir</span><span class="table-sub" data-i18n="common.privateTransfer">Private transfer</span></td>
-            <td>€90</td><td>€130</td><td>€170</td><td>€240</td>
-          </tr>
-          <tr>
-            <td><span data-i18n="route.essaouiraImsouane">Essaouira → Imsouane</span><span class="table-sub" data-i18n="common.privateTransfer">Private transfer</span></td>
-            <td>€70</td><td>€100</td><td>€140</td><td>€200</td>
-          </tr>
-          <tr>
-            <td><span data-i18n="route.essaouiraCasablanca">Essaouira → Casablanca</span><span class="table-sub" data-i18n="common.privateTransfer">Private transfer</span></td>
-            <td>€190</td><td>€250</td><td>€320</td><td>€420</td>
-          </tr>
-          <tr>
-            <td><span data-i18n="route.essaouiraOuarzazate">Essaouira → Ouarzazate</span><span class="table-sub" data-i18n="common.privateTransfer">Private transfer</span></td>
-            <td>€250</td><td>€320</td><td>€400</td><td>€510</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <p class="table-note" data-i18n="fleet.table.note">Prices include the vehicle, driver, fuel and tolls for a direct one-way journey. Waiting time, extra stops and excursions are quoted separately. Fares during major events may differ and are always confirmed in advance.</p>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="container">
-    <div class="cta-panel reveal">
-      <div>
-        <h2 data-i18n="fleet.cta.title">Need a vehicle for a larger group?</h2>
-        <p data-i18n="fleet.cta.text">Tell us the passenger count, luggage and route. We will confirm the right vehicle and a group price.</p>
-      </div>
-      <div class="cta-panel__actions">
-        <a class="btn btn--primary" href="book.html" data-i18n="nav.book">Book Now</a>
-        <a class="btn btn--secondary" href="contact.html" data-i18n="common.contactUs">Contact us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
   </main>
 
   <footer class="site-footer">

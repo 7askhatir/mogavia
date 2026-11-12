@@ -4,6 +4,7 @@
   "phoneDisplay": "+212 600 000 000",
   "email": "booking@taxitoursessaouira.com",
   "whatsapp": "212600000000",
+  "comingSoon": true,
   "pages": [
     {
       "slug": "",

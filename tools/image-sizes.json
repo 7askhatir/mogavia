@@ -219,6 +219,30 @@
     "h": 720,
     "w": 960
   },
+  "stay-apartment-480.jpg": {
+    "h": 326,
+    "w": 480
+  },
+  "stay-apartment-960.jpg": {
+    "h": 653,
+    "w": 960
+  },
+  "stay-terrace-480.jpg": {
+    "h": 360,
+    "w": 480
+  },
+  "stay-terrace-960.jpg": {
+    "h": 720,
+    "w": 960
+  },
+  "stay-villa-480.jpg": {
+    "h": 320,
+    "w": 480
+  },
+  "stay-villa-960.jpg": {
+    "h": 640,
+    "w": 960
+  },
   "tour-agafay-480.jpg": {
     "h": 384,
     "w": 480
