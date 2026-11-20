@@ -135,6 +135,22 @@
       "sitemap": { "priority": "0.8", "changefreq": "yearly" }
     },
     {
+      "slug": "results.html",
+      "file": "results",
+      "page": "results",
+      "title": "Transfer Availability | Taxi Tours Essaouira",
+      "description": "Compare available private transfer vehicles, filter by category, and choose the right option for your trip.",
+      "ogTitle": "Transfer Availability | Taxi Tours Essaouira",
+      "ogImage": "book-hero-960.jpg",
+      "ogWidth": 960,
+      "ogHeight": 497,
+      "preload": "book-hero",
+      "preloadSrcset": "assets/img/book-hero-960.jpg 960w, assets/img/book-hero-1600.jpg 1600w",
+      "preloadSizes": "100vw",
+      "bodyClass": "page-results",
+      "sitemap": { "priority": "0.6", "changefreq": "monthly" }
+    },
+    {
       "slug": "book.html",
       "file": "book",
       "page": "book",

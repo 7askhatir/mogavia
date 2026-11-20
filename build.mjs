@@ -244,7 +244,10 @@ function preloadLink(page) {
 }
 
 function isComingSoon(page) {
-  return Boolean(config.comingSoon) && page.page !== "home" && page.page !== "404";
+  if (!config.comingSoon) return false;
+  if (page.page === "home" || page.page === "404") return false;
+  if (page.page === "book" || page.page === "results") return false;
+  return true;
 }
 
 function comingSoonContent(page) {

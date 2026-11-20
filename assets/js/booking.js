@@ -761,19 +761,50 @@
     });
   }
 
+  function ensureSelectOption(select, value) {
+    if (!select || !value) return false;
+    if (select.querySelector('option[value="' + value.replace(/"/g, '\\"') + '"]')) return true;
+    var option = document.createElement("option");
+    option.value = value;
+    option.textContent = value;
+    select.appendChild(option);
+    return true;
+  }
+
   function applyUrlPrefill(form) {
     var params = new URLSearchParams(window.location.search);
-    var from = params.get("from");
-    var to = params.get("to");
+    var from = params.get("from") || params.get("pickup");
+    var to = params.get("to") || params.get("destination");
     var date = params.get("date");
     var pax = params.get("pax") || params.get("passengers");
     var time = params.get("time");
+    var luggage = params.get("luggage");
+    var vehicleLabel = params.get("vehicleLabel") || params.get("vehicleId");
+    var price = params.get("price");
 
-    if (from && locationByKey(from)) form.querySelector('[name="pickup"]').value = from;
-    if (to && locationByKey(to)) form.querySelector('[name="destination"]').value = to;
+    var pickupSelect = form.querySelector('[name="pickup"]');
+    var destSelect = form.querySelector('[name="destination"]');
+
+    if (from && pickupSelect) {
+      if (!locationByKey(from)) ensureSelectOption(pickupSelect, from);
+      pickupSelect.value = from;
+    }
+    if (to && destSelect) {
+      if (!locationByKey(to)) ensureSelectOption(destSelect, to);
+      destSelect.value = to;
+    }
     if (date && date >= todayISO()) form.querySelector('[name="date"]').value = date;
     if (pax && Number(pax) >= 1 && Number(pax) <= 40) form.querySelector('[name="passengers"]').value = String(Number(pax));
     if (time && /^\d{2}:\d{2}$/.test(time)) form.querySelector('[name="time"]').value = time;
+
+    var notes = form.querySelector('[name="notes"]');
+    if (notes && !notes.value) {
+      var parts = [];
+      if (luggage) parts.push("Luggage: " + luggage);
+      if (vehicleLabel) parts.push("Selected vehicle: " + vehicleLabel);
+      if (price) parts.push("Quoted price: " + (config.currencySymbol || "€") + price);
+      if (parts.length) notes.value = parts.join("\n");
+    }
   }
 
   function initBookingForm() {
